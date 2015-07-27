@@ -1,0 +1,147 @@
+.header a:link,
+.header a:visited {
+    color: $primary-color;
+    border-bottom-color: $gray-very-light;
+}
+.header a:hover,
+.header a:focus {
+    color: $link;
+    border-bottom-color: transparent;
+}
+.skip-links {
+    @include inline-block-list-container;
+    text-align: right;
+    li {
+        @include inline-block-list-item(.5em);
+        font-size: scut-em(12);
+        line-height: 1;
+        padding-bottom: .5em;
+        a:link, a:visited {
+            color: $black;
+            border-bottom: transparent;
+            }
+        a:hover, a:focus {
+            background-color: $gray-light;
+            color: $link;
+            }
+    }
+}
+.banner {
+    padding-bottom: .5em;
+    text-align: center;
+    }
+a.site-title__link,
+a.site-title__link:link,
+a.site-title__link:visited {
+    background-color: transparent;
+    border-color: transparent;
+}
+.site-title__text {
+    color: $white;
+    font-size: 2.4em;
+    font-weight: bold;
+    //text-transform: uppercase;
+    font-variant: small-caps;
+    letter-spacing: 2px;
+}
+.site-title__link:hover .site-title__text,
+.site-title__link:focus .site-title__text,
+.site-title__link:active .site-title__text {
+    color: rgba(223, 48, 52, 0.8);
+}
+.site-baseline {
+    font-family: $serif;
+    font-style: italic;
+    margin-top: 0;
+    margin-bottom: rhythm(.5, 24px);
+    color: $gray;
+    }
+.header__nav {
+    @include inline-block-list-container;
+    clear: left;
+    text-align: center;
+    text-transform: uppercase;
+//    background: $gray-very-dark;
+    background: $black;
+    li {
+        @include inline-block-list-item(1em);
+        margin-right: .5em;
+        padding-top: .25em;
+        padding-bottom: .25em;
+        text-align: center;
+        span {
+            @include adjust-font-size-to(14px);
+            font-family: $serif;
+            font-style: italic;
+            display: block;
+            }
+        }
+        li a:link,
+        li a:visited {
+            color: $white;
+        }
+        li a:hover,
+        li a:focus {
+            background-color: $gray-dark;
+        }
+    }
+/* Si js est actif, un bouton pour afficher/masquer le menu est créé */
+#hamburger {
+    position: absolute;
+    top: 3em;
+    right: .5em;
+    padding: 0;
+    background-color: $black;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    @include svg(icon_hamburger);
+    height: 2.5em;
+    width: 2.5em;
+    border: 2px solid $black;
+    &:visited {
+        background-color: $black;
+    }
+    &:focus,
+    &:hover {
+        background-color: shade($black, 20%);
+        border-color: $black;
+    }
+    &.open {
+    background-image: inline-image('icon_close.png');
+    background-image: inline-image('icon_close.svg'), none;
+    }
+}
+@media screen and(max-width: $large-screen) {
+    .header {
+        padding-left: .5em;
+        padding-right: .5em;
+        padding-bottom: 0;
+    }
+    .header__nav {
+        margin-left: -.5em;
+        margin-right: -.5em;
+        li {
+            display: block;
+            margin-right: 0;
+            border-bottom: 1px solid $white;
+        }
+    }
+}
+@media screen and(max-width: $small-screen) {
+    .skip-links {
+        text-align: center;
+        @include adjust-font-size-to(10px);
+    }
+    .site-baseline {
+        display: none;
+    }
+    #hamburger {
+        top: 1.5em;
+        right: .5em;
+    }
+}
+@media screen and (max-width: $medium-screen) {
+    .site-title {
+        font-size: 1.8em
+    }
+}

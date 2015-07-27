@@ -1,0 +1,19 @@
+{{tpl:extends parent="__layout.html"}}
+
+<tpl:Block name="main-content">
+
+	<tpl:Entries>
+
+		<!-- Display only first image of entry -->
+		<figure>
+			<a href="{{tpl:EntryURL}}" title="{{tpl:EntryTitle encode_html="1"}}">{{tpl:EntryFirstImage size="o"}}</a>
+		</figure>
+
+		<!-- Pagination -->
+		<tpl:EntriesFooter>
+			{{tpl:include src="_pagination.html"}}
+		</tpl:EntriesFooter>
+
+	</tpl:Entries>
+
+</tpl:Block>	<!-- main-content -->

@@ -1,0 +1,74 @@
+body {
+    background: $white;
+    color: $primary-color;
+}
+#main {
+    background-color: $white;
+    padding: 0 0 2em;
+}
+#page {
+//    @include zen-grid-container();
+    max-width: $large-screen;
+    margin: 0 auto;
+    padding: 0;
+}
+#wrapper {
+//    @include zen-grid-container();
+}
+#footer {
+    position: fixed;
+    bottom: 1.875em;
+    left: 1.875em;
+    max-width: 12.5em;
+}
+.header {
+    background: $black;
+    position: relative;
+    padding: 1em 0 3em;
+    }
+@media all and(max-width: $small-screen) {
+    #main {
+        padding: .5em;
+    }
+}
+@media screen and(max-width: ($large-screen + 25em)) {
+    #footer {
+        position: static;
+        width: 100%;
+        padding: 1em .5em 0;
+    }
+}
+@media screen and(min-width: ($xlarge-screen + .1em)) and(max-width: 110em) {
+    #page {
+        max-width: $large-screen;
+    }
+    #main {
+ //       @include zen-grid-item(9,1)
+    }
+    #sidebar {
+ //       @include zen-grid-item(3,10)
+    }
+}
+@media screen and(min-width: 110.1em) {
+    body {
+        font-size: 1.125em;
+    }
+    #page {
+        max-width: 103em;
+    }
+    .header {
+//        max-width: zen-grid-item-width(8);
+        padding-bottom: 0;
+    }
+    #main {
+ //       @include zen-grid-item(8,1)
+    }
+    #sidebar {
+ //       @include zen-grid-item(4,9);
+    }
+    #blognav, #blogextra {
+        width: 49%;
+        display: inline-block;
+        vertical-align: top;
+    }
+}
