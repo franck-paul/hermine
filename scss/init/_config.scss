@@ -11,38 +11,6 @@ $critical-usage-threshold: 100;
 
 @import "libs/scut";
 
-// ----------------- Zengrids config -------------- //
-//$legacy-support-for-ie7: false;
-//$legacy-support-for-ie6: false;
-//@import "libs/zen-grids/background";
-//@import "libs/zen-grids/flow";
-//@import "libs/zen-grids/grids";
-//@import "libs/sass-mq-master/_mq";
-
-// ------------------ VARIABLES ------------------- //
-
-// ========================================================================== //
-// =Tailles de base
-//
-// On établit la grille verticale puis on calcule la taille des caractères
-// et de l'interlignage de référence en fonction de cette grille.
-// ========================================================================== //
-//$base-grid: 8px;
-//$base-font-size: 16px;
-//$base-line-height: 24px;
-
-// ========================================================================== //
-// =Grille (zen-grids)
-// ========================================================================== //
-//$zen-columns: 12;
-//$zen-gutters: 2em;
-
-// ========================================================================== //
-// =Box model pour IE (zen-grids)
-// ========================================================================== //
-
-//$box-sizing-polyfill-path: "scripts";
-
 // ========================================================================== //
 // =Typographie
 // ========================================================================== //

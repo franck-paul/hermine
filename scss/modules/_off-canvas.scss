@@ -61,10 +61,13 @@
     }
     .off-canvas #main, .footer.off-canvas {
         float: left;
-//        margin-left: -1*(zen-grid-item-width(8));
+        margin-left: -1*($xlarge-screen/12*8);
     }
     .off-canvas .sidebar {
         position: relative;
-//        @include zen-grid-item (11, 1, right);
+        float: right;
+        width: 90%;
+        margin-right: 0;
+        margin-left: -100%;
     }
 }

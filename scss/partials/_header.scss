@@ -61,7 +61,6 @@ a.site-title__link:visited {
     clear: left;
     text-align: center;
     text-transform: uppercase;
-//    background: $gray-very-dark;
     background: $black;
     li {
         @include inline-block-list-item(1em);
@@ -88,7 +87,7 @@ a.site-title__link:visited {
 /* Si js est actif, un bouton pour afficher/masquer le menu est créé */
 #hamburger {
     position: absolute;
-    top: 3em;
+    top: 11em;
     right: .5em;
     padding: 0;
     background-color: $black;
@@ -126,6 +125,10 @@ a.site-title__link:visited {
             border-bottom: 1px solid $white;
         }
     }
+    #hamburger {
+        top: .5em;
+        right: .5em;
+    }
 }
 @media screen and(max-width: $small-screen) {
     .skip-links {
@@ -136,7 +139,7 @@ a.site-title__link:visited {
         display: none;
     }
     #hamburger {
-        top: 1.5em;
+        top: .5em;
         right: .5em;
     }
 }
