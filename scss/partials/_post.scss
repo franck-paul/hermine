@@ -11,20 +11,22 @@
         max-width: 42em;
         margin-right: auto;
         margin-left: auto;
-    }
-    p.wide-media {
-        width: $large-screen;
-        max-width: 100%;
-        &:first-child {
-            display: none;
-        }
-        img {
-            display: block;
+        .wide-media {
+            width: $large-screen;
+            max-width: 100%;
+            &:first-child {
+                display: none;
+            }
+            img {
+                display: block;
+            }
         }
     }
     figure, video {
         width: $large-screen;
         max-width: 100%;
+        margin-right: auto;
+        margin-left: auto;
         display: block;
     }
 }

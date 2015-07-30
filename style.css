@@ -809,16 +809,18 @@ a.site-title__link:visited {
     max-width: 42em;
     margin-right: auto;
     margin-left: auto; }
-  .post-content p.wide-media {
-    width: 60em;
-    max-width: 100%; }
-    .post-content p.wide-media:first-child {
-      display: none; }
-    .post-content p.wide-media img {
-      display: block; }
+    .post-content p .wide-media {
+      width: 60em;
+      max-width: 100%; }
+      .post-content p .wide-media:first-child {
+        display: none; }
+      .post-content p .wide-media img {
+        display: block; }
   .post-content figure, .post-content video {
     width: 60em;
     max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
     display: block; }
 
 .post-day-date {
