@@ -13,8 +13,8 @@
 if (!defined('DC_RC_PATH')) { return; }
 
 $this->registerModule(
-	/* Name */			"hermine",
-	/* Description*/	"Hermine",
+	/* Name */			"Hermine",
+	/* Description*/	"Hermine photoblog theme (based on Berlin)",
 	/* Author */		"Franck Paul",
 	/* Version */		'1.0',
 	array(

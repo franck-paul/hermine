@@ -1,0 +1,22 @@
+{{tpl:extends parent="__parent__"}}
+
+<tpl:Block name="main-content">
+	<div id="content-info">
+		<h2>{{tpl:ArchiveDate}} <span>({{tpl:ArchiveEntriesCount}})</span></h2>
+	</div>
+
+	<div class="content-inner">
+		<tpl:Entries>
+			<!-- Display only first image of entry -->
+			<figure>
+				<a href="{{tpl:EntryURL}}" title="{{tpl:EntryTitle encode_html="1"}}">{{tpl:EntryFirstImage size="o"}}</a>
+			</figure>
+		</tpl:Entries>
+	</div>
+
+	<p class="pagination">
+		<tpl:ArchivePrevious><a href="{{tpl:ArchiveURL}}" title="{{tpl:ArchiveDate encode_html=\"1\"}}" class="prev">&#171; {{tpl:ArchiveDate encode_html="1"}}</a>&nbsp;</tpl:ArchivePrevious>
+		{{tpl:ArchiveDate}}
+		<tpl:ArchiveNext>&nbsp;<a href="{{tpl:ArchiveURL}}" title="{{tpl:ArchiveDate encode_html=\"1\"}}" class="next">{{tpl:ArchiveDate encode_html="1"}} &#187;</a></tpl:ArchiveNext>
+	</p>
+</tpl:Block>

@@ -1,0 +1,33 @@
+{{tpl:extends parent="__parent__"}}
+
+<tpl:Block name="main-content">
+
+	<div id="content-info">
+      <h2>{{tpl:lang Tag}} : {{tpl:TagID}}</h2>
+	</div>
+
+	<div class"content-inner">
+		<tpl:Entries>
+			<!-- Display only first image of entry -->
+			<figure>
+				<a href="{{tpl:EntryURL}}" title="{{tpl:EntryTitle encode_html="1"}}">{{tpl:EntryFirstImage size="o"}}</a>
+			</figure>
+
+			<!-- Pagination -->
+			<tpl:EntriesFooter>
+				{{tpl:include src="_pagination.html"}}
+			</tpl:EntriesFooter>
+		</tpl:Entries>
+	</div> <!-- End #content-inner -->
+
+	<div id="content-info">
+		<p><a type="application/atom+xml" href="{{tpl:TagFeedURL type="atom"}}"
+			title="{{tpl:lang This tag's entries Atom feed}}" class="feed">{{tpl:lang Entries feed}}</a>
+			<tpl:SysIf operator="or" comments_active="1" pings_active="1">
+				 - <a type="application/atom+xml" href="{{tpl:TagFeedURL type="atom"}}/comments"
+				title="{{tpl:lang This tag's comments Atom feed}}" class="feed">{{tpl:lang Comments feed}}</a>
+			</tpl:SysIf>
+		</p>
+	</div>
+
+</tpl:Block>
