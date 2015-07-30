@@ -1,0 +1,43 @@
+<div class="post simple" id="p{{tpl:EntryID}}" role="article">
+	<h2 class="post-title">{{tpl:EntryTitle encode_html="1"}}</h2>
+	<hr class="post-title-rule" />
+
+	<!-- # --BEHAVIOR-- publicEntryBeforeContent -->
+	{{tpl:SysBehavior behavior="publicEntryBeforeContent"}}
+
+	<!-- # Entry with an excerpt -->
+	<tpl:EntryIf extended="1">
+		<div class="post-excerpt">{{tpl:EntryExcerpt}}</div>
+	</tpl:EntryIf>
+
+	<div class="post-content">{{tpl:EntryContent}}</div>
+
+	<!-- # --BEHAVIOR-- publicEntryAfterContent -->
+	{{tpl:SysBehavior behavior="publicEntryAfterContent"}}
+
+	<!-- # Attachments -->
+	<tpl:Attachments>
+		<tpl:AttachmentsHeader>
+		<div class="post-attachments" id="attachments">
+			<h3 class="post-attachments-title">{{tpl:lang Attachments}}</h3>
+			<ul class="post-attachments-list">
+		</tpl:AttachmentsHeader>
+					<li class="post-attachments-item {{tpl:AttachmentType}}">
+						<tpl:AttachmentIf is_mp3="1">
+							{{tpl:include src="_mp3_player.html"}} -
+						</tpl:AttachmentIf>
+						<tpl:AttachmentIf is_flv="1">
+							{{tpl:include src="_flv_player.html"}}
+						</tpl:AttachmentIf>
+						<tpl:AttachmentIf is_flv="0">
+							<a href="{{tpl:AttachmentURL}}"
+							 title="{{tpl:AttachmentFileName}} ({{tpl:AttachmentSize}})">{{tpl:AttachmentTitle}}</a>
+						</tpl:AttachmentIf>
+					</li>
+		<tpl:AttachmentsFooter>
+				</ul>
+			</div>
+		</tpl:AttachmentsFooter>
+	</tpl:Attachments>
+
+</div>

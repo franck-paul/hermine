@@ -35,7 +35,8 @@ h6 {
     margin-bottom: 0;
 }
 h2, h3, h4, h5, h6 {
-    color: $secondary-color;
+//    color: $secondary-color;
+    clear: both;
 }
 // liens
 a {
@@ -62,6 +63,8 @@ hr {
     height: 1px;
     background: #333;
     @include background-image(linear-gradient(left, $gray-medium, $gray-dark, $gray-medium));
+    clear: both;
+    display: block;
 }
 blockquote, q {
     font-family: $serif;

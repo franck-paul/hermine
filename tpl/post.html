@@ -1,0 +1,14 @@
+{{tpl:extends parent="__parent__"}}
+
+<tpl:Block name="main-content">
+	{{tpl:include src="_simple-entry.html"}}
+
+	<p class="navlinks">
+		<tpl:EntryPrevious><a href="{{tpl:EntryURL}}"
+		 title="{{tpl:EntryTitle encode_html="1"}}" class="prev">&#171; {{tpl:EntryTitle encode_html="1"
+		 cut_string="50"}}</a></tpl:EntryPrevious>
+		<tpl:EntryNext> <span>-</span> <a href="{{tpl:EntryURL}}"
+		 title="{{tpl:EntryTitle encode_html="1"}}" class="next">{{tpl:EntryTitle encode_html="1"
+		 cut_string="50"}} &#187;</a></tpl:EntryNext>
+	</p>
+</tpl:Block>

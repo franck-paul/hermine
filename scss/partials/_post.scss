@@ -3,7 +3,7 @@
 ------------------------------- */
 .post {
     max-width: 100%;
-    margin: 2em auto 6em;
+    margin: 2em auto 3em;
 }
 .post-content {
     max-width: $large-screen;
@@ -35,12 +35,16 @@
     margin-bottom: scut-em(12,14);
 }
 .post-meta {
-    font-size: scut-em(14);
-    background-color: $gray-light;
+    font-size: scut-em(13);
+    color: $gray-medium;
+//    background-color: $gray-light;
     border-radius: scut-em(8, 14);
     padding: scut-em(8, 14) scut-em(16, 14);
     margin-bottom: scut-em(24, 14);
     clear: both;
+    max-width: $large-screen - 6em;
+    margin-left: auto;
+    margin-right: auto;
 }
 .post-info {
     margin: .5em 0;
@@ -65,9 +69,20 @@
 .post-info-co {
     margin: .5em 0;
     }
-.post-title {
+.post-footer {
     text-align: center;
-    font-weight: 200;
+    margin-top: 4em;
+    margin-bottom: 3em;
+}
+.post-title {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 50px;
+    font-weight: 900;
+    letter-spacing: -4px;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
     a, a:link, a:visited {
         border-bottom-color: $white;
     }
@@ -79,8 +94,15 @@
         font-size: scut-em(32);
     }
 }
+.post-title-rule {
+    max-width: 16em;
+    height: 3px;
+    margin: 15px auto;
+    background: $black;
+}
 .post-content {
-    margin-bottom: 1em;
+    margin-top: 5em;
+    margin-bottom: 4em;
 }
 .post-read-it {
     margin-bottom: 1.5em;

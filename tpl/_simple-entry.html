@@ -1,0 +1,31 @@
+<!-- # Post content and attachments -->
+{{tpl:include src="_entry-content.html"}}
+
+<!-- # Comments, pings and comment form -->
+{{tpl:include src="_entry-feedback.html"}}
+
+<!-- # Metadata -->
+<div class="post-meta">
+	<p class="post-info">
+		<span class="post-permalink"><a href="{{tpl:EntryURL}}">{{tpl:lang Permalink}}</a></span>
+		<tpl:EntryIf has_category="1">
+			<span class="post-cat"><tpl:EntryCategoriesBreadcrumb><a
+			href="{{tpl:CategoryURL}}">{{tpl:CategoryTitle encode_html="1"}}</a> › </tpl:EntryCategoriesBreadcrumb><a
+			href="{{tpl:EntryCategoryURL}}">{{tpl:EntryCategory encode_html="1"}}</a></span>
+		</tpl:EntryIf>
+	</p>
+
+	<tpl:EntryTags>
+		<tpl:TagsHeader>
+			<ul class="post-tags-list">
+		</tpl:TagsHeader>
+			<li class="post-tags-item"><a href="{{tpl:TagURL}}">{{tpl:TagID}}</a></li>
+		<tpl:TagsFooter>
+			</ul>
+		</tpl:TagsFooter>
+	</tpl:EntryTags>
+</div>
+<p class="post-footer">
+	<span class="post-date">{{tpl:EntryDate}}</span><br />
+	<span class="post-author">{{tpl:EntryAuthorLink}}</span>
+</p>
