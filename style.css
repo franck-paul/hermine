@@ -379,7 +379,9 @@ body {
   position: fixed;
   bottom: 1.875em;
   left: 1.875em;
-  max-width: 12.5em; }
+  max-width: 12.5em;
+  padding-bottom: 55px;
+  background: #fff url(img/hermine.png) no-repeat left bottom; }
 
 .header {
   background: #000;
@@ -393,7 +395,7 @@ body {
   #footer {
     position: static;
     width: 100%;
-    padding: 1em .5em 0; } }
+    padding: 1em .5em 55px; } }
 @media screen and (min-width: 80.1em) and (max-width: 110em) {
   #page {
     max-width: 60em; } }
@@ -808,16 +810,16 @@ a.site-title__link:visited {
     margin-right: auto;
     margin-left: auto; }
   .post-content p.wide-media {
-    width: 78em;
-    max-width: 78em;
-    margin-right: -9em !important;
-    margin-left: -9em !important;
-    text-align: center; }
+    width: 60em;
+    max-width: 100%; }
+    .post-content p.wide-media:first-child {
+      display: none; }
     .post-content p.wide-media img {
-      display: block;
-      max-width: 100%;
-      margin-right: auto;
-      margin-left: auto; }
+      display: block; }
+  .post-content figure, .post-content video {
+    width: 60em;
+    max-width: 100%;
+    display: block; }
 
 .post-day-date {
   font-size: 0.875em;

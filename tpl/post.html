@@ -1,6 +1,11 @@
 {{tpl:extends parent="__parent__"}}
 
 <tpl:Block name="main-content">
+	<!-- Display only first image of entry -->
+	<figure>
+		{{tpl:EntryFirstImage size="o"}}
+	</figure>
+
 	{{tpl:include src="_simple-entry.html"}}
 
 	<p class="navlinks">

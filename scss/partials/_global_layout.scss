@@ -16,6 +16,8 @@ body {
     bottom: 1.875em;
     left: 1.875em;
     max-width: 12.5em;
+    padding-bottom: 55px;
+    background: #fff url(img/hermine.png) no-repeat left bottom;
 }
 .header {
     background: $black;
@@ -31,7 +33,7 @@ body {
     #footer {
         position: static;
         width: 100%;
-        padding: 1em .5em 0;
+        padding: 1em .5em 55px;
     }
 }
 @media screen and(min-width: ($xlarge-screen + .1em)) and(max-width: 110em) {

@@ -13,17 +13,19 @@
         margin-left: auto;
     }
     p.wide-media {
-        width: $large-screen + 18em;
-        max-width: $large-screen + 18em;
-        margin-right: -9em !important;
-        margin-left: -9em !important;
-        text-align: center;
+        width: $large-screen;
+        max-width: 100%;
+        &:first-child {
+            display: none;
+        }
         img {
             display: block;
-            max-width: 100%;
-            margin-right: auto;
-            margin-left: auto;
         }
+    }
+    figure, video {
+        width: $large-screen;
+        max-width: 100%;
+        display: block;
     }
 }
 
