@@ -813,6 +813,8 @@ a.site-title__link:visited {
     margin-right: -9em !important;
     margin-left: -9em !important;
     text-align: center; }
+    .post-content p.wide-media:first-child {
+      display: none; }
     .post-content p.wide-media img {
       display: block;
       max-width: 100%;

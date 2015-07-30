@@ -18,6 +18,9 @@
         margin-right: -9em !important;
         margin-left: -9em !important;
         text-align: center;
+        &:first-child {
+            display: none;
+        }
         img {
             display: block;
             max-width: 100%;
