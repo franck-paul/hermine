@@ -807,13 +807,13 @@ a.site-title__link:visited {
 .post-content, .post-excerpt {
   max-width: 60em; }
   .post-content p, .post-content hr, .post-content h1, .post-content h2, .post-content h3, .post-content h4, .post-content h5, .post-content h6,
-  .post-content blockquote, .post-content pre, .post-content ul, .post-content ol,
+  .post-content blockquote, .post-content pre, .post-content ul, .post-content ol, .post-content div,
   .post-content .footnotes, .post-excerpt p, .post-excerpt hr, .post-excerpt h1, .post-excerpt h2, .post-excerpt h3, .post-excerpt h4, .post-excerpt h5, .post-excerpt h6,
-  .post-excerpt blockquote, .post-excerpt pre, .post-excerpt ul, .post-excerpt ol,
+  .post-excerpt blockquote, .post-excerpt pre, .post-excerpt ul, .post-excerpt ol, .post-excerpt div,
   .post-excerpt .footnotes {
     margin-right: auto;
     margin-left: auto; }
-  .post-content p, .post-content hr, .post-content h6, .post-content ul, .post-content ol, .post-excerpt p, .post-excerpt hr, .post-excerpt h6, .post-excerpt ul, .post-excerpt ol {
+  .post-content p, .post-content hr, .post-content h6, .post-content ul, .post-content ol, .post-content div, .post-excerpt p, .post-excerpt hr, .post-excerpt h6, .post-excerpt ul, .post-excerpt ol, .post-excerpt div {
     max-width: 42em; }
   .post-content p.wide-media, .post-excerpt p.wide-media {
     width: 60em;
@@ -942,7 +942,10 @@ a.site-title__link:visited {
   position: relative;
   padding: 0 2.5em .25em;
   border: 1px solid #dcdcdc;
-  box-shadow: 0 2px rgba(0, 0, 0, 0.05), 0 0 1px rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 2px rgba(0, 0, 0, 0.05), 0 0 1px rgba(0, 0, 0, 0.2);
+  max-width: 42em;
+  margin-left: auto;
+  margin-right: auto; }
 
 .post-attachments:before {
   content: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAgCAQAAAC1deB6AAAAyElEQVR4AeWTTRGDMBSEV0IkREIkRAISkFAJccB5T0hAAhIqIRIigTLZAGEaWm49dL5L8uZ7f4cHGiYuDTyxAQYuTeZaijn0oN/pSm17SMrDiUENP0vhWrKMK/ZaOvLDSXKMnL5Ier1L/p+l6Y40/0KydyRzZ7uO4PNa6vMrFSURLcnoKAqhLYFOVVYGopY0riN20dMQQknb+UxEA6/pQHuaocaWIx1LX1Wrmhr2RUk0Co3ScmjOHH9HVDfbIKp2PcGgXfbmPSFebLeaymHNyOgAAAAASUVORK5CYII=');

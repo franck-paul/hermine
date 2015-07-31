@@ -8,12 +8,12 @@
 .post-content, .post-excerpt {
     max-width: $large-screen;
     p, hr, h1, h2, h3, h4, h5, h6,
-    blockquote, pre, ul, ol,
+    blockquote, pre, ul, ol, div,
     .footnotes {
         margin-right: auto;
         margin-left: auto;
     }
-    p, hr, h6, ul, ol {
+    p, hr, h6, ul, ol, div {
         max-width: 42em;
     }
     p.wide-media {
@@ -149,6 +149,9 @@
     padding: 0 2.5em .25em;
     border: 1px solid $gray-medium;
     box-shadow: 0 2px rgba(0, 0, 0, 0.05), 0 0 1px rgba(0, 0, 0, 0.2);
+    max-width: 42em;
+    margin-left: auto;
+    margin-right: auto;
 }
 .post-attachments:before {
     content: inline-image('icon_attachments.png');
