@@ -143,5 +143,6 @@
     font-size: 110%;
     }
 /* archives par mois */
-.dc-archive-month #content-info h2 {
+.dc-archive-month #content-info h2 span {
+        display: none;
     }
