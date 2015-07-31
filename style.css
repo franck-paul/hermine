@@ -821,8 +821,6 @@ a.site-title__link:visited {
     max-width: 100%; }
     .post-content p.wide-media img, .post-excerpt p.wide-media img, .content-info__cat-desc p.wide-media img {
       display: block; }
-  .post-content p.local-media:first-child, .post-excerpt p.local-media:first-child, .content-info__cat-desc p.local-media:first-child {
-    display: none; }
   .post-content h1, .post-excerpt h1, .content-info__cat-desc h1 {
     max-width: 14em; }
   .post-content h2, .post-excerpt h2, .content-info__cat-desc h2 {

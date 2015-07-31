@@ -49,11 +49,20 @@
 			}
 			$(this).parent().parent().addClass(cls);
 		});
-		// Not yet
+		// Add specific style if first local media is used in post header
+		if($(".media-title")) {
+			$(".post-content p.local-media:first-child, .post-excerpt p.local-media:first-child").css("display","none");
+		}
+		if($(".media-cat-title")) {
+			$(".content-info__cat-desc p.local-media:first-child").css("display","none");
+		}
+
+		// Not set yet
 		/*
 		$(".post-content figure, .post-content video").each(function(){
 			$(this).addClass("wide-media");
 		});
 		//*/
+
 	});
 </script>
