@@ -697,13 +697,9 @@ a.site-title__link:visited {
 .sidebar li:hover ul {
   background-color: #fafafa; }
 
-@media screen and (min-width: 30.1em) and (max-width: 60em) {
+@media screen and (min-width: 30.1em) {
   .blognav__widgets .widget, .blogextra__widgets .widget {
     width: 50%;
-    float: left; } }
-@media screen and (min-width: 60.1em) and (max-width: 80em) {
-  .blognav__widgets .widget, .blogextra__widgets .widget {
-    width: 33.33%;
     float: left; } }
 /* *** navigation *** */
 .pagination {
@@ -926,7 +922,10 @@ a.site-title__link:visited {
   margin-bottom: 4em; }
 
 .post-read-it {
-  margin-bottom: 1.5em; }
+  margin-bottom: 1.5em;
+  max-width: 42em;
+  margin-left: auto;
+  margin-right: auto; }
 
 .footnotes {
   font-size: 0.875em;

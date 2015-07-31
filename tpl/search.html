@@ -1,0 +1,32 @@
+{{tpl:extends parent="__parent__"}}
+
+<tpl:Block name="main-content">
+	<div id="content-info">
+		<h2>{{tpl:lang Search}}</h2>
+		<tpl:SysIf search_count="==0">
+			<p>{{tpl:SysSearchString encode_html="1" string="Your search for <em>%1$s</em> returned no result."}}</p>
+		</tpl:SysIf>
+		<tpl:SysIf search_count="==1">
+			<p>{{tpl:SysSearchString encode_html="1" string="Your search for <em>%1$s</em> returned <strong>%2$s</strong> result."}}</p>
+		</tpl:SysIf>
+		<tpl:SysIf search_count="&gt;1">
+			<p>{{tpl:SysSearchString encode_html="1" string="Your search for <em>%1$s</em> returned <strong>%2$s</strong> results."}}</p>
+		</tpl:SysIf>
+	</div>
+
+	<div class="content-inner">
+		<tpl:Entries>
+
+			<!-- Display only first image of entry -->
+			<figure>
+				<a href="{{tpl:EntryURL}}" title="{{tpl:EntryTitle encode_html="1"}}">{{tpl:EntryFirstImage size="o"}}</a>
+			</figure>
+
+			<!-- Pagination -->
+			<tpl:EntriesFooter>
+				{{tpl:include src="_pagination.html"}}
+			</tpl:EntriesFooter>
+
+		</tpl:Entries>
+	</div> <!-- End #content-inner -->
+</tpl:Block>
