@@ -39,8 +39,8 @@
 			$('body,html').animate({scrollTop:0},800);
 		});
 
-		// Add specific .wide-display class to paragraph with local media inside
-		$(".post-content p a img, .post-content figure a img, .content-info__cat-desc p a img, .content-info__cat-desc figure a img").each(function(){
+		// Add specific .wide-display class to paragraph with media inside, figure and video
+		$(".post-content p a img, .post-content figure a img, .post-excerpt p a img, .post-excerpt figure a img, .content-info__cat-desc p a img, .content-info__cat-desc figure a img").each(function(){
 			// Scheme = p a (for full-size media) img (for thumbnail-size media)
 			var src = $(this).attr("src");
 			var cls = "wide-media";
@@ -49,6 +49,10 @@
 			}
 			$(this).parent().parent().addClass(cls);
 		});
+		$(".post-content video, .post-excerpt video").each(function(){
+			$(this).addClass("wide-media");
+		});
+
 		// Add specific style if first local media is used in post header
 		if($(".media-title")) {
 			$(".post-content .local-media:first-child, .post-excerpt .local-media:first-child").css("display","none");
@@ -56,13 +60,6 @@
 		if($(".media-cat-title")) {
 			$(".content-info__cat-desc .local-media:first-child").css("display","none");
 		}
-
-		// Not set yet
-		/*
-		$(".post-content figure, .post-content video").each(function(){
-			$(this).addClass("wide-media");
-		});
-		//*/
 
 	});
 </script>
