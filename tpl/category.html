@@ -1,6 +1,15 @@
 {{tpl:extends parent="__parent__"}}
 
 <tpl:Block name="main-content">
+	<tpl:Entries no_content="1" lastn="1">
+		<tpl:EntriesHeader>
+			<!-- Display only first image of entry -->
+			<figure>
+				{{tpl:EntryFirstImage size="o" with_category="1" cat_only="1"}}
+			</figure>
+		</tpl:EntriesHeader>
+	</tpl:Entries>
+
 	<div id="content-info">
 		<h2>{{tpl:lang Category}} :
 			<tpl:CategoryParents>
@@ -40,7 +49,6 @@
 		<div class="content-info__cat-desc">
 			{{tpl:CategoryDescription}}
 		</div>
-
 
 		<tpl:CategoryFirstChildren>
 			<tpl:CategoriesHeader>

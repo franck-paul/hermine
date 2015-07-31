@@ -5,22 +5,47 @@
     max-width: 100%;
     margin: 2em auto 3em;
 }
-.post-content {
+.post-content, .post-excerpt, .content-info__cat-desc {
     max-width: $large-screen;
-    p {
-        max-width: 42em;
+    p, hr, h1, h2, h3, h4, h5, h6,
+    blockquote, pre, ul, ol,
+    .footnotes {
         margin-right: auto;
         margin-left: auto;
+    }
+    p, hr, h6, ul, ol {
+        max-width: 42em;
     }
     p.wide-media {
         width: $large-screen;
         max-width: 100%;
-        &:first-child {
-            display: none;
-        }
         img {
             display: block;
         }
+    }
+    p.local-media:first-child {
+        display: none;
+    }
+    h1 {
+        max-width: (42em / 3);
+    }
+    h2 {
+        max-width: (42em / 4);
+    }
+    h3 {
+        max-width: (42em / 1.75);
+    }
+    h4 {
+        max-width: (42em / 1.3125);
+    }
+    h5 {
+        max-width: (42em / 1.125)
+    }
+    blockquote {
+        max-width: (42em / 1.125);
+    }
+    pre, .footnotes, .footnotes p {
+        max-width: (42em / 0.875);
     }
     figure, video {
         width: $large-screen;

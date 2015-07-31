@@ -803,20 +803,41 @@ a.site-title__link:visited {
   max-width: 100%;
   margin: 2em auto 3em; }
 
-.post-content {
+.post-content, .post-excerpt, .content-info__cat-desc {
   max-width: 60em; }
-  .post-content p {
-    max-width: 42em;
+  .post-content p, .post-content hr, .post-content h1, .post-content h2, .post-content h3, .post-content h4, .post-content h5, .post-content h6,
+  .post-content blockquote, .post-content pre, .post-content ul, .post-content ol,
+  .post-content .footnotes, .post-excerpt p, .post-excerpt hr, .post-excerpt h1, .post-excerpt h2, .post-excerpt h3, .post-excerpt h4, .post-excerpt h5, .post-excerpt h6,
+  .post-excerpt blockquote, .post-excerpt pre, .post-excerpt ul, .post-excerpt ol,
+  .post-excerpt .footnotes, .content-info__cat-desc p, .content-info__cat-desc hr, .content-info__cat-desc h1, .content-info__cat-desc h2, .content-info__cat-desc h3, .content-info__cat-desc h4, .content-info__cat-desc h5, .content-info__cat-desc h6,
+  .content-info__cat-desc blockquote, .content-info__cat-desc pre, .content-info__cat-desc ul, .content-info__cat-desc ol,
+  .content-info__cat-desc .footnotes {
     margin-right: auto;
     margin-left: auto; }
-  .post-content p.wide-media {
+  .post-content p, .post-content hr, .post-content h6, .post-content ul, .post-content ol, .post-excerpt p, .post-excerpt hr, .post-excerpt h6, .post-excerpt ul, .post-excerpt ol, .content-info__cat-desc p, .content-info__cat-desc hr, .content-info__cat-desc h6, .content-info__cat-desc ul, .content-info__cat-desc ol {
+    max-width: 42em; }
+  .post-content p.wide-media, .post-excerpt p.wide-media, .content-info__cat-desc p.wide-media {
     width: 60em;
     max-width: 100%; }
-    .post-content p.wide-media:first-child {
-      display: none; }
-    .post-content p.wide-media img {
+    .post-content p.wide-media img, .post-excerpt p.wide-media img, .content-info__cat-desc p.wide-media img {
       display: block; }
-  .post-content figure, .post-content video {
+  .post-content p.local-media:first-child, .post-excerpt p.local-media:first-child, .content-info__cat-desc p.local-media:first-child {
+    display: none; }
+  .post-content h1, .post-excerpt h1, .content-info__cat-desc h1 {
+    max-width: 14em; }
+  .post-content h2, .post-excerpt h2, .content-info__cat-desc h2 {
+    max-width: 10.5em; }
+  .post-content h3, .post-excerpt h3, .content-info__cat-desc h3 {
+    max-width: 24em; }
+  .post-content h4, .post-excerpt h4, .content-info__cat-desc h4 {
+    max-width: 32em; }
+  .post-content h5, .post-excerpt h5, .content-info__cat-desc h5 {
+    max-width: 37.3333333em; }
+  .post-content blockquote, .post-excerpt blockquote, .content-info__cat-desc blockquote {
+    max-width: 37.3333333em; }
+  .post-content pre, .post-content .footnotes, .post-content .footnotes p, .post-excerpt pre, .post-excerpt .footnotes, .post-excerpt .footnotes p, .content-info__cat-desc pre, .content-info__cat-desc .footnotes, .content-info__cat-desc .footnotes p {
+    max-width: 48em; }
+  .post-content figure, .post-content video, .post-excerpt figure, .post-excerpt video, .content-info__cat-desc figure, .content-info__cat-desc video {
     width: 60em;
     max-width: 100%;
     margin-right: auto;

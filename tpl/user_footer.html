@@ -39,14 +39,21 @@
 			$('body,html').animate({scrollTop:0},800);
 		});
 
-		// Add specific .wide-display class to paragraph with media inside
-		$(".post-content p img").each(function(){
+		// Add specific .wide-display class to paragraph with local media inside
+		$(".post-content p a img, .content-info__cat-desc p a img").each(function(){
 			// Scheme = p a (for full-size media) img (for thumbnail-size media)
-			$(this).parent().parent().addClass("wide-media");
+			var src = $(this).attr("src");
+			var cls = "wide-media";
+			if (src.indexOf("http://") !== 0 && (src.indexOf("https://") !== 0)) {
+				cls = cls + " local-media";
+			}
+			$(this).parent().parent().addClass(cls);
 		});
+		// Not yet
+		/*
 		$(".post-content figure, .post-content video").each(function(){
 			$(this).addClass("wide-media");
 		});
-
+		//*/
 	});
 </script>
