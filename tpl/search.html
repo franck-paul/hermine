@@ -1,8 +1,11 @@
 {{tpl:extends parent="__parent__"}}
 
 <tpl:Block name="main-content">
+	<div id="content-title">
+		<h2>{{tpl:lang Search}} : {{tpl:SysSearchString encode_html="1" string="<em>%1$s</em>"}}</h2>
+	</div>
+
 	<div id="content-info">
-		<h2>{{tpl:lang Search}}</h2>
 		<tpl:SysIf search_count="==0">
 			<p>{{tpl:SysSearchString encode_html="1" string="Your search for <em>%1$s</em> returned no result."}}</p>
 		</tpl:SysIf>
