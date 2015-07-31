@@ -36,11 +36,6 @@ body {
         padding: 1em .5em 55px;
     }
 }
-@media screen and(min-width: ($xlarge-screen + .1em)) and(max-width: 110em) {
-    #page {
-        max-width: $large-screen;
-    }
-}
 @media screen and(min-width: 110.1em) {
     body {
         font-size: 1.125em;
