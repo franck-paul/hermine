@@ -1199,6 +1199,54 @@ button.submit:active, button.preview:active {
 .arch-year-list span {
   font-size: .875em; }
 
+/* thumbnails */
+.arch-thumbnail-list {
+  /* if thumbnail is ul, delete margin and padding */
+  margin: 0;
+  padding: 0; }
+
+.arch-thumb {
+  /* li or div */
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 0 4px;
+  padding: 0;
+  background: #333; }
+
+.arch-thumb p {
+  margin: 0; }
+
+.arch-thumb a {
+  display: block;
+  width: 6em;
+  height: 6em;
+  overflow: hidden;
+  position: relative; }
+  .arch-thumb a:link, .arch-thumb a:visited {
+    border-bottom: none; }
+
+.arch-thumb a:link img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  -webkit-transition: .3s;
+          transition: .3s; }
+
+.arch-thumb a:hover img {
+  top: 1.5em; }
+
+.arch-month {
+  font-size: 1.66em;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  position: absolute;
+  top: 0;
+  left: 4px;
+  opacity: .7; }
+
 /* par categorie */
 .arch-cat-list, .arch-sub-cat-list {
   background: transparent url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAKCAIAAAD6sKMdAAAAD0lEQVQIW2NIS0tjIAIDAO84C/WI5ZqTAAAAAElFTkSuQmCC') repeat-y; }

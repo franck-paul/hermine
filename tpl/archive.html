@@ -15,10 +15,22 @@
 					<tpl:ArchivesYearHeader>
 						<div class="arch-by-year__each-year">
 							<h4>{{tpl:ArchiveDate format="%Y"}}</h4>
-							<ul class="arch-list arch-year-list">
+							<ul class="arch-list arch-year-list arch-thumbnail-list">
 					</tpl:ArchivesYearHeader>
-								<li><a href="{{tpl:ArchiveURL}}" title="{{tpl:ArchiveDate encode_html="1"}}">{{tpl:ArchiveDate encode_html="1" format="%B"}}</a>
-									<span>({{tpl:ArchiveEntriesCount}})</span></li>
+							<tpl:Entries lastn="1">
+								<li class="arch-thumb"><p>
+									<a href="{{tpl:ArchiveURL}}" title="{{tpl:ArchiveDate encode_html="1"}}">
+										<img src="
+										<tpl:IfEntryFirstImage size="sq">
+											{{tpl:EntryFirstImage size="sq" no_tag="1"}}
+										{{tpl:else}}
+											{{tpl:BlogThemeURL}}/img/bg_dark.png
+										</tpl:IfEntryFirstImage>
+										" alt="{{tpl:ArchiveDate encode_html="1" format="%B"}}" />
+										<span class="arch-month">{{tpl:ArchiveDate encode_html="1" format="%m"}}</span>
+									</a>
+								</p></li>
+							</tpl:Entries>
 					<tpl:ArchivesYearFooter>
 							</ul>
 						</div>
