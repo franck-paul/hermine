@@ -21,8 +21,8 @@
 								<li class="arch-thumb"><p>
 									<a href="{{tpl:ArchiveURL}}" title="{{tpl:ArchiveDate encode_html="1"}}">
 										<img src="
-										<tpl:IfEntryFirstImage size="sq">
-											{{tpl:EntryFirstImage size="sq" no_tag="1"}}
+										<tpl:IfEntryFirstImage size="m">
+											{{tpl:EntryFirstImage size="m" no_tag="1"}}
 										{{tpl:else}}
 											{{tpl:BlogThemeURL}}/img/bg_dark.png
 										</tpl:IfEntryFirstImage>
@@ -75,9 +75,6 @@
 					</div>
 				</tpl:TagsFooter>
 			</tpl:Tags>
-		</div>
-
-		<div id="more-arch"><!-- others things -->
 			<div id="arch-by-page" class="arch-block arch-by-page">
 				<tpl:Entries type="page" no_content="1" lastn="0" selected="0">
 					<tpl:EntriesHeader>

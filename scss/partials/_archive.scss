@@ -23,7 +23,20 @@
 .arch-block:first-child {
     margin-left: 0;
     }
+#other-criteria {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+#other-criteria .arch-block {
+    margin: 0 2em 0 0;
+    &:last-child {
+        margin-right: 0;
+    }
+}
 .arch-block h3 {
+    margin-top: 1em;
     margin-bottom: 1em;
     font-size: 1.2em;
     font-style: italic;
@@ -34,8 +47,8 @@
 .arch-block h4 {
     font-weight: bold;
     font-size: 1.1em;
-    margin-bottom: .5em;
-    margin-top: .5em;
+    margin-bottom: 0;
+    margin-top: 0;
     color: $gray-very-dark;
     }
 .arch-list, .arch-sub-list {
@@ -50,7 +63,6 @@
 .arch-by-year {
     margin-right: 0;
     margin-bottom: 1em;
-    margin-top: 2em;
     }
 .arch-by-year h3 {
     margin-bottom: 0;
@@ -64,11 +76,8 @@
     font-size: .875em;
     font-style: italic;
     }
-.arch-by-year__each-year {
-    display: inline-block;
-    vertical-align: top;
-    margin: 0;
-    width: 10em;
+.arch-by-year__each-year h4 {
+    float: left;
     }
 .arch-year-list {
     margin-bottom: 1.5em;
@@ -78,7 +87,7 @@
     }
 /* thumbnails */
 .arch-thumbnail-list { /* if thumbnail is ul, delete margin and padding */
-    margin: 0;
+    margin: 0 0 0 4em;
     padding: 0;
     }
 .arch-thumb { /* li or div */
@@ -86,7 +95,7 @@
     vertical-align: top;
     margin: 0 0 4px;
     padding: 0;
-    background: #333;
+    background: #373737;
     }
 .arch-thumb p {
     margin: 0;
@@ -103,22 +112,27 @@
     }
 .arch-thumb a:link img {
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
     padding: 0;
     width: 100%;
     height: auto;
-    transition: .3s;
+    transition: .6s;
     }
 .arch-thumb a:hover img {
-    top: 1.5em;
+    left: 3em;
+    transform: rotate(30deg);
+    }
+.arch-thumb a:hover span {
+    font-size: 1.75em;
+    line-height: 1;
     }
 .arch-month {
     font-size: 1.66em;
     color: #fff;
     text-shadow: 1px 1px 1px #000;
     position: absolute;
-    top: 0;
+    top: 2px;
     left: 4px;
     opacity: .7;
     }
@@ -138,7 +152,10 @@
     }
 /* par tag */
 .arch-by-tag {
-    width: 17em;
+    max-width: 20em;
+    @media all and(min-width: $large-screen) {
+        max-width: 32em;
+        }
     }
 .arch-tag-list li {
     display: inline;
