@@ -31,6 +31,10 @@
 }
 #bc-home {
 }
+/* *** media before title / home page *** */
+.media-original, .media-title, .media-cat-title {
+    margin: 0 auto;
+}
 /* *** content info *** */
 #content-info, #content-title {
     margin-top: 2em;
