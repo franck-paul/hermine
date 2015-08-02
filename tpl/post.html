@@ -7,12 +7,10 @@
 			{{tpl:EntryFirstImage size="o" class="media-title"}}
 		</figure>
 	{{tpl:else}}
-		<tpl:IfEntryFirstImage size="o" with_category="1" cat_only="1">
-			<!-- Display first image of category desc -->
-			<figure>
-				{{tpl:EntryFirstImage size="o" with_category="1" cat_only="1" class="media-cat-title"}}
-			</figure>
-		</tpl:IfEntryFirstImage>
+		<!-- Display first image of category desc -->
+		<figure>
+			{{tpl:EntryFirstImage size="o" with_category="1" cat_only="1" class="media-cat-title"}}
+		</figure>
 	</tpl:IfEntryFirstImage>
 
 	{{tpl:include src="_simple-entry.html"}}
