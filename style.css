@@ -407,7 +407,9 @@ body {
 .header a:link,
 .header a:visited {
   color: #373737;
-  border-bottom-color: #fafafa; }
+  border-bottom-color: #fafafa;
+  -webkit-transition: .6s;
+          transition: .6s; }
 
 .header a:hover,
 .header a:focus {
@@ -454,7 +456,9 @@ a.site-title__link:visited {
   font-size: 2.4em;
   font-weight: bold;
   font-variant: small-caps;
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+  -webkit-transition: .4s;
+          transition: .4s; }
 
 .site-title__link:hover .site-title__text,
 .site-title__link:focus .site-title__text,

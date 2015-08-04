@@ -2,6 +2,7 @@
 .header a:visited {
     color: $primary-color;
     border-bottom-color: $gray-very-light;
+    transition: .6s;
 }
 .header a:hover,
 .header a:focus {
@@ -43,6 +44,7 @@ a.site-title__link:visited {
     //text-transform: uppercase;
     font-variant: small-caps;
     letter-spacing: 2px;
+    transition: .4s;
 }
 .site-title__link:hover .site-title__text,
 .site-title__link:focus .site-title__text,
