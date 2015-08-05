@@ -188,8 +188,9 @@ h1, h2, h3, h4, h5, h6 {
   width: 1px; }
 
 /*
-* Scut, a collection of Sass utilities to ease and improve our implementations of common style-code patterns.
-* v0.8.0
+* Scut, a collection of Sass utilities
+* to ease and improve our implementations of common style-code patterns.
+* v1.2.1
 * Docs at http://davidtheclark.github.io/scut
 */
 /** --------------------------------------------------
@@ -616,7 +617,9 @@ a.site-title__link:visited {
   padding: 0 1em 1em 0; }
   #blogcustom ul {
     list-style-type: none;
-    padding-left: 0; }
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0; }
     #blogcustom ul li {
       display: block;
       padding-left: 0;
