@@ -99,6 +99,7 @@
 a.tooltip {
     display: block;
     position: relative;
+    border-bottom: 0;
 }
 a.tooltip:hover, a.tooltip:active {
     border-color: transparent;
