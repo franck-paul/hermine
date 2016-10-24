@@ -21,8 +21,9 @@
 				$('#gotop').fadeOut();
 			}
 		});
-		$('#gotop').click(function() {
+		$('#gotop').click(function(e) {
 			$('body,html').animate({scrollTop:0},800);
+            e.preventDefault();
 		});
 
 		// Add specific .wide-display class to paragraph with media inside, figure and video
