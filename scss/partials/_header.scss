@@ -53,7 +53,7 @@ a.site-title__link:visited {
     color: rgba(126, 195, 241, 0.8);
 }
 .site-baseline {
-    font-family: $serif;
+//    font-family: $serif;
     font-style: italic;
     margin-top: 0;
     margin-bottom: rhythm(.5, 24px);
@@ -73,7 +73,7 @@ a.site-title__link:visited {
         text-align: center;
         span {
             @include adjust-font-size-to(14px);
-            font-family: $serif;
+//            font-family: $serif;
             font-style: italic;
             display: block;
             }
