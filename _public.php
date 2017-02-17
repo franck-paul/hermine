@@ -1,4 +1,6 @@
 <?php
+namespace themes\hermine;
+
 # -- BEGIN LICENSE BLOCK ----------------------------------
 # This file is part of Hermine, a theme for Dotclear 2.
 # based on WP eponym theme from Leo Babuta (http://leobabauta.com and http://zenhabits.net/themes)
@@ -14,7 +16,7 @@
 if (!defined('DC_RC_PATH')) { return; }
 
 # Templates
-$core->tpl->addBlock('IfEntryFirstImage',array('tplHermineTheme','IfEntryFirstImage'));
+$core->tpl->addBlock('IfEntryFirstImage',array(__NAMESPACE__.'\tplHermineTheme','IfEntryFirstImage'));
 
 class tplHermineTheme
 {

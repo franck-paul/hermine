@@ -16,10 +16,10 @@ $this->registerModule(
 	/* Name */			"Hermine",
 	/* Description*/	"Hermine photoblog theme (based on Berlin)",
 	/* Author */		"Franck Paul",
-	/* Version */		'1.1',
+	/* Version */		'1.2',
 	array(
 		/* Type */				'type' =>					'theme',
-		/* tplset */			'tplset' =>					'currywurst',
+		/* tplset */			'tplset' =>					'dotty',
 		/* Widget title */		'widgettitleformat' =>		'<h3 class="widget-title">%s</h3>',
 		/* Widget subtitle */	'widgetsubtitleformat' =>	'<h4 class="widget-subtitle">%s</h4>'
 	)
