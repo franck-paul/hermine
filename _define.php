@@ -16,7 +16,7 @@ $this->registerModule(
 	/* Name */			"Hermine",
 	/* Description*/	"Hermine photoblog theme (based on Berlin)",
 	/* Author */		"Franck Paul",
-	/* Version */		'1.2',
+	/* Version */		'1.3',
 	array(
 		/* Type */				'type' =>					'theme',
 		/* tplset */			'tplset' =>					'dotty',
