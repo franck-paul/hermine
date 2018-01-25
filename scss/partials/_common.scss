@@ -71,9 +71,12 @@ blockquote, q {
     color: $gray-dark;
     font-style: italic;
 }
+blockquote em {
+	font-style: normal;
+}
 blockquote {
     font-size: scut-em(18);
-    line-height: 1.33;
+    line-height: 1.5;
     quotes: '\201C' '\201D';
     margin-top: scut-em(32,18);
 }

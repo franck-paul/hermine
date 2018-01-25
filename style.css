@@ -318,9 +318,12 @@ blockquote, q {
   color: #636363;
   font-style: italic; }
 
+blockquote em {
+  font-style: normal; }
+
 blockquote {
   font-size: 1.125em;
-  line-height: 1.33;
+  line-height: 1.5;
   quotes: '\201C' '\201D';
   margin-top: 1.7777778em; }
 
