@@ -1,26 +1,25 @@
 <?php
-# -- BEGIN LICENSE BLOCK ----------------------------------
-# This file is part of hermine, a theme for Dotclear 2.
-#
-# Copyright (c) Franck Paul and contributors
-# carnet.franck.paul@gmail.com
-#
-# Licensed under the GPL version 2.0 license.
-# A copy of this license is available in LICENSE file or at
-# http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
-# -- END LICENSE BLOCK ------------------------------------
+/**
+ * @brief hermine, a theme for Dotclear 2
+ *
+ * @package Dotclear
+ * @subpackage Themes
+ *
+ * @copyright Olivier Meunier & Association Dotclear
+ * @copyright GPL-2.0-only
+ */
 
-if (!defined('DC_RC_PATH')) { return; }
+if (!defined('DC_RC_PATH')) {return;}
 
 $this->registerModule(
-	/* Name */			"Hermine",
-	/* Description*/	"Hermine photoblog theme (based on Berlin)",
-	/* Author */		"Franck Paul",
-	/* Version */		'1.3',
-	array(
-		/* Type */				'type' =>					'theme',
-		/* tplset */			'tplset' =>					'dotty',
-		/* Widget title */		'widgettitleformat' =>		'<h3 class="widget-title">%s</h3>',
-		/* Widget subtitle */	'widgetsubtitleformat' =>	'<h4 class="widget-subtitle">%s</h4>'
-	)
+    "Hermine",                                   // Name
+    "Hermine photoblog theme (based on Berlin)", // Description
+    "Franck Paul",                               // Author
+    '1.3',                                       // Version
+    array(
+        'type'                 => 'theme',                               // Type
+        'tplset'               => 'dotty',                               // tplset
+        'widgettitleformat'    => '<h3 class="widget-title">%s</h3>',    // Widget title
+        'widgetsubtitleformat' => '<h4 class="widget-subtitle">%s</h4>' // Widget subtitle
+    )
 );
