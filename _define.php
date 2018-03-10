@@ -5,8 +5,8 @@
  * @package Dotclear
  * @subpackage Themes
  *
- * @copyright Olivier Meunier & Association Dotclear
- * @copyright GPL-2.0-only
+ * @copyright Franck Paul (carnet.franck.paul@gmail.com)
+ * @copyright GPL-2.0
  */
 
 if (!defined('DC_RC_PATH')) {return;}
