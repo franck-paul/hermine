@@ -14,7 +14,7 @@ namespace themes\hermine;
 if (!defined('DC_RC_PATH')) {return;}
 
 # Templates
-$core->tpl->addBlock('IfEntryFirstImage', array(__NAMESPACE__ . '\tplHermineTheme', 'IfEntryFirstImage'));
+$core->tpl->addBlock('IfEntryFirstImage', [__NAMESPACE__ . '\tplHermineTheme', 'IfEntryFirstImage']);
 
 class tplHermineTheme
 {
