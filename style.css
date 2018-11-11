@@ -801,6 +801,9 @@ a.site-title__link:visited {
 .media-original, .media-title, .media-cat-title {
   margin: 0 auto; }
 
+img.media-original, img.media-title, img.media-cat-title {
+  max-height: inherit; }
+
 /* *** content info *** */
 #content-info, #content-title {
   margin-top: 2em;

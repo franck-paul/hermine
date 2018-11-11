@@ -1,125 +1,132 @@
 /* *** navigation *** */
+
 .pagination {
-    margin-top: 2em;
-    margin-bottom: .5em;
-    text-align: center;
+  margin-top: 2em;
+  margin-bottom: .5em;
+  text-align: center;
 }
 .navlinks {
-    color: $white;
-    margin: 0;
-    text-align: center;
+  color: $white;
+  margin: 0;
+  text-align: center;
 }
 .prev {
-    @include replace-text(inline-image('icon_prev.png'));
+  @include replace-text(inline-image('icon_prev.png'));
 }
 .next {
-    @include replace-text(inline-image('icon_next.png'));
+  @include replace-text(inline-image('icon_next.png'));
 }
 .prev, .next {
-    vertical-align: middle;
-    width: 2.5em;
-    height: 2.5em;
-    display: inline-block;
-    border-radius: 50%;
-    border: 1px solid $gray-very-dark;
-    background-color: $black;
-        &:hover, &:focus {
-            border-width: 3px;
-        }
+  vertical-align: middle;
+  width: 2.5em;
+  height: 2.5em;
+  display: inline-block;
+  border-radius: 50%;
+  border: 1px solid $gray-very-dark;
+  background-color: $black;
+  &:hover, &:focus {
+    border-width: 3px;
+  }
 }
-#breadcrumb {
-}
-#bc-home {
-}
+#breadcrumb {}
+#bc-home {}
 /* *** media before title / home page *** */
+
 .media-original, .media-title, .media-cat-title {
-    margin: 0 auto;
+  margin: 0 auto;
+}
+img {
+  &.media-original, &.media-title, &.media-cat-title {
+    max-height: inherit;
+  }
 }
 /* *** content info *** */
-#content-info, #content-title {
-    margin-top: 2em;
-    margin-bottom: 4em;
-    padding: 0;
-    font-size: scut-em(14);
-    h2 {
-        margin-top: 1em;
-        margin-bottom: 1em;
-        font-size: 50px;
-        font-weight: 900;
-        letter-spacing: -4px;
-        text-transform: uppercase;
-        line-height: 1.2;
-        text-align: center;
-    }
-    h3 {
-        font-size: 1em;
-    }
-    ul {
-        margin-top: scut-em(8, 14);
-        padding-left: 0;
 
-    }
+#content-info, #content-title {
+  margin-top: 2em;
+  margin-bottom: 4em;
+  padding: 0;
+  font-size: scut-em(14);
+  h2 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 50px;
+    font-weight: 900;
+    letter-spacing: -4px;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+  }
+  h3 {
+    font-size: 1em;
+  }
+  ul {
+    margin-top: scut-em(8, 14);
+    padding-left: 0;
+  }
 }
 .content-info__feed {
-    display: inline-block;
-    vertical-align: top;
-    list-style-type: none;
-    li {
-        display: inline;
-        margin-right: 1.5em;
-        }
+  display: inline-block;
+  vertical-align: top;
+  list-style-type: none;
+  li {
+    display: inline;
+    margin-right: 1.5em;
+  }
 }
 .content-info__sub-cat {
-    margin-top: 2em;
-    h3 { font-weight: bold;}
+  margin-top: 2em;
+  h3 {
+    font-weight: bold;
+  }
 }
 // lien de retour, à combiner avec le script js
 #gotop {
-    display:none;
-    z-index: 1000;
-    position:fixed;
-    bottom: 0;
-    right:.5em;
-    width: 10em;
-    padding: .25em;
-    border: 1px solid $gray-dark;
-    border-radius: .25em;
-    background-color: $white;
-    color:#333;
-    font-size: .875em;
-    text-align:center;
-    a, a:link, a:hover, a:active {
-        background: transparent;
-        border: none;
-        font-weight: bold;
-        color: $gray-dark;
-    }
+  display: none;
+  z-index: 1000;
+  position: fixed;
+  bottom: 0;
+  right: .5em;
+  width: 10em;
+  padding: .25em;
+  border: 1px solid $gray-dark;
+  border-radius: .25em;
+  background-color: $white;
+  color: #333;
+  font-size: .875em;
+  text-align: center;
+  a, a:link, a:hover, a:active {
+    background: transparent;
+    border: none;
+    font-weight: bold;
+    color: $gray-dark;
+  }
 }
 // tooltip
 a.tooltip {
-    display: block;
-    position: relative;
-    border-bottom: 0;
+  display: block;
+  position: relative;
+  border-bottom: 0;
 }
 a.tooltip:hover, a.tooltip:active {
-    border-color: transparent;
+  border-color: transparent;
 }
 a.tooltip:after {
-    background: #ccc;
-    background: rgba(0,0,0,.5);
-    border-radius: 5px;
-    bottom: 15%;
-    left: 25%;
-    width: 50%;
-    color: #fff;
-    content: attr(title);
-    text-align: center;
-    padding: 10px 15px;
-    position: absolute;
-    z-index: 98;
-    opacity: 0;
-    transition: opacity .4s ease-in-out;
+  background: #ccc;
+  background: rgba(0, 0, 0, .5);
+  border-radius: 5px;
+  bottom: 15%;
+  left: 25%;
+  width: 50%;
+  color: #fff;
+  content: attr(title);
+  text-align: center;
+  padding: 10px 15px;
+  position: absolute;
+  z-index: 98;
+  opacity: 0;
+  transition: opacity .4s ease-in-out;
 }
 a.tooltip:hover:after {
-    opacity: 1;
+  opacity: 1;
 }
