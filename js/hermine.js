@@ -7,7 +7,7 @@ $('html').addClass('js');
 $('.header__nav').
 before('<button id="hamburger" type="button"><span class="visually-hidden">Navigation</span></button>').
 toggle();
-$('#hamburger').click(function() {
+$('#hamburger').on('click', function() {
   $(this).toggleClass('open');
   $('.header__nav').toggle('easing');
 });
@@ -21,7 +21,7 @@ $(document).ready(function() {
       $('#gotop').fadeOut();
     }
   });
-  $('#gotop').click(function(e) {
+  $('#gotop').on('click', function(e) {
     $('body,html').animate({
       scrollTop: 0
     }, 800);
