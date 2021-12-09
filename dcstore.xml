@@ -1,8 +1,8 @@
 <modules xmlns:da="http://dotaddict.org/da/">
   <module id="hermine">
-    <name>Hermine photoblog theme (based on Berlin)</name>
+    <name>Hermine</name>
     <version>1.4</version>
-    <author>Hermine photoblog theme (based on Berlin)</author>
+    <author>Franck Paul</author>
     <desc>Hermine photoblog theme (based on Berlin)</desc>
     <file>https://github.com/franck-paul/hermine/releases/download/1.4/theme-hermine-1.4.zip</file>
     <da:dcmin>2.13</da:dcmin>
