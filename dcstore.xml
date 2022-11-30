@@ -1,11 +1,11 @@
 <modules xmlns:da="http://dotaddict.org/da/">
   <module id="hermine">
     <name>Hermine</name>
-    <version>1.4</version>
+    <version>2.0</version>
     <author>Franck Paul</author>
     <desc>Hermine photoblog theme (based on Berlin)</desc>
-    <file>https://github.com/franck-paul/hermine/releases/download/1.4/theme-hermine-1.4.zip</file>
-    <da:dcmin>2.13</da:dcmin>
+    <file>https://github.com/franck-paul/hermine/releases/download/2.0/theme-hermine-2.0.zip</file>
+    <da:dcmin>2.24</da:dcmin>
     <da:details>https://open-time.net/?q=hermine</da:details>
     <da:support>https://github.com/franck-paul/hermine</da:support>
   </module>
