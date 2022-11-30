@@ -13,19 +13,19 @@ if (!defined('DC_RC_PATH')) {
 }
 
 $this->registerModule(
-    'Hermine',                                   // Name
-    'Hermine photoblog theme (based on Berlin)', // Description
-    'Franck Paul',                               // Author
-    '1.4',                                       // Version
+    'Hermine',
+    'Hermine photoblog theme (based on Berlin)',
+    'Franck Paul',
+    '2.0',
     [
-        'requires'             => [['core', '2.13']], // Dependencies
-        'type'                 => 'theme',                               // Type
-        'tplset'               => 'dotty',                               // tplset
-        'widgettitleformat'    => '<h3 class="widget-title">%s</h3>',    // Widget title
-        'widgetsubtitleformat' => '<h4 class="widget-subtitle">%s</h4>', // Widget subtitle
+        'requires'             => [['core', '2.24']],
+        'type'                 => 'theme',
+        'tplset'               => 'dotty',
+        'widgettitleformat'    => '<h3 class="widget-title">%s</h3>',
+        'widgetsubtitleformat' => '<h4 class="widget-subtitle">%s</h4>',
 
-        'details'    => 'https://open-time.net/?q=hermine',       // Details URL
-        'support'    => 'https://github.com/franck-paul/hermine', // Support URL
-        'repository' => 'https://raw.githubusercontent.com/franck-paul/hermine/master/dcstore.xml'
+        'details'    => 'https://open-time.net/?q=hermine',
+        'support'    => 'https://github.com/franck-paul/hermine',
+        'repository' => 'https://raw.githubusercontent.com/franck-paul/hermine/master/dcstore.xml',
     ]
 );
