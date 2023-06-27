@@ -9,5 +9,7 @@
 # DOT NOT MODIFY THIS FILE !
 #
 
-l10n::$locales['toDay'] = 'to';
-l10n::$locales['FromDay'] = 'From';
+use Dotclear\Helper\L10n;
+
+L10n::$locales['toDay'] = 'to';
+L10n::$locales['FromDay'] = 'From';

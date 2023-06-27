@@ -13,6 +13,19 @@ $('#hamburger').on('click', function () {
 });
 
 $(() => {
+  // totop init
+  const $btn = $('#gotop');
+  const $link = $('#gotop a');
+  $link.attr('title', $link.text());
+  $link.html(
+    '<svg width="24px" height="24px" viewBox="1 -6 524 524" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M460 321L426 355 262 192 98 355 64 321 262 125 460 321Z"></path></svg>',
+  );
+  $btn.css({
+    width: '32px',
+    height: '32px',
+    padding: '3px 0',
+  });
+
   // totop scroll
   $(window).scroll(function () {
     if ($(this).scrollTop() === 0) {
@@ -30,6 +43,9 @@ $(() => {
     );
     e.preventDefault();
   });
+
+  // scroll comment preview if present
+  document.getElementById('pr')?.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'nearest' }); // totop scroll
 
   // Add specific .wide-display class to paragraph with media inside, figure and video
   $(

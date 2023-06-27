@@ -8,10 +8,6 @@
  * @copyright Franck Paul (carnet.franck.paul@gmail.com)
  * @copyright GPL-2.0
  */
-if (!defined('DC_RC_PATH')) {
-    return;
-}
-
 $this->registerModule(
     'Hermine',
     'Hermine photoblog theme (based on Berlin)',
@@ -24,8 +20,8 @@ $this->registerModule(
         'widgettitleformat'    => '<h3 class="widget-title">%s</h3>',
         'widgetsubtitleformat' => '<h4 class="widget-subtitle">%s</h4>',
 
-        'details'    => 'https://open-time.net/?q=hermine',
-        'support'    => 'https://github.com/franck-paul/hermine',
-        'repository' => 'https://raw.githubusercontent.com/franck-paul/hermine/master/dcstore.xml',
+        'details'              => 'https://open-time.net/?q=hermine',
+        'support'              => 'https://github.com/franck-paul/hermine',
+        'repository'           => 'https://raw.githubusercontent.com/franck-paul/hermine/master/dcstore.xml',
     ]
 );
