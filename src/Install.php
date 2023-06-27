@@ -14,9 +14,7 @@ declare(strict_types=1);
 
 namespace Dotclear\Plugin\hermine;
 
-use dcCore;
 use dcNsProcess;
-use Exception;
 
 class Install extends dcNsProcess
 {
@@ -32,11 +30,6 @@ class Install extends dcNsProcess
     {
         if (!static::$init) {
             return false;
-        }
-
-        try {
-        } catch (Exception $e) {
-            dcCore::app()->error->add($e->getMessage());
         }
 
         return true;

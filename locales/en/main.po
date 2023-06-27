@@ -1,5 +1,23 @@
-msgid "toDay"
-msgstr "to"
+msgid "Category"
+msgstr ""
 
-msgid "FromDay"
-msgstr "From"
+msgid "Pages"
+msgstr ""
+
+msgid "Serie"
+msgstr ""
+
+msgid "Series"
+msgstr ""
+
+msgid "This serie's comments Atom feed"
+msgstr ""
+
+msgid "This serie's entries Atom feed"
+msgstr ""
+
+#~ msgid "toDay"
+#~ msgstr "to"
+
+#~ msgid "FromDay"
+#~ msgstr "From"
