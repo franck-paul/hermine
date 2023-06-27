@@ -1,16 +1,36 @@
-# 
+#
 # Translators:
 # Franck Paul <carnet.franck.paul@gmail.com>, 2023
-# 
+#
 msgid ""
 msgstr ""
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-06-27 14:57+0200\n"
 "Last-Translator: Franck Paul <carnet.franck.paul@gmail.com>, 2023\n"
 "Language-Team: French (https://app.transifex.com/open-time/teams/109573/fr/)\n"
 "Language: fr\n"
 "Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
-msgid "toDay"
-msgstr "au"
+msgid "Category"
+msgstr ""
 
-msgid "FromDay"
-msgstr "Du"
+msgid "Pages"
+msgstr ""
+
+msgid "Serie"
+msgstr ""
+
+msgid "Series"
+msgstr ""
+
+msgid "This serie's comments Atom feed"
+msgstr ""
+
+msgid "This serie's entries Atom feed"
+msgstr ""
+
+#~ msgid "toDay"
+#~ msgstr "au"
+
+#~ msgid "FromDay"
+#~ msgstr "Du"
