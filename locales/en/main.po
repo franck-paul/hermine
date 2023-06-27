@@ -15,9 +15,3 @@ msgstr ""
 
 msgid "This serie's entries Atom feed"
 msgstr ""
-
-#~ msgid "toDay"
-#~ msgstr "to"
-
-#~ msgid "FromDay"
-#~ msgstr "From"
