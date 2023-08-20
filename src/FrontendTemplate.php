@@ -12,7 +12,7 @@
  */
 declare(strict_types=1);
 
-namespace Dotclear\Plugin\hermine;
+namespace Dotclear\Theme\hermine;
 
 class FrontendTemplate
 {

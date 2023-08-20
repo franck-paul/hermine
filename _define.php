@@ -14,7 +14,7 @@ $this->registerModule(
     'Franck Paul',
     '3.1',
     [
-        'requires'             => [['core', '2.26']],
+        'requires'             => [['core', '2.27'], ['php', '8.1']],
         'type'                 => 'theme',
         'tplset'               => 'dotty',
         'widgettitleformat'    => '<h3 class="widget-title">%s</h3>',
