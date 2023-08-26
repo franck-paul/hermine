@@ -12,7 +12,7 @@ $this->registerModule(
     'Hermine',
     'Hermine photoblog theme (based on Berlin)',
     'Franck Paul',
-    '3.1',
+    '4.0',
     [
         'requires'             => [['core', '2.27'], ['php', '8.1']],
         'type'                 => 'theme',
