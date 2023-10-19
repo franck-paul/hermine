@@ -65,9 +65,9 @@ $(() => {
 
   // Add specific style if first local media is used in post header
   if ($('.media-title')) {
-    $('.post-content .local-media:first-child, .post-excerpt .local-media:first-child').css('display', 'none');
+    //$('.post-content .local-media:first-child, .post-excerpt .local-media:first-child').css('display', 'none');
   }
   if ($('.media-cat-title')) {
-    $('.content-info__cat-desc .local-media:first-child').css('display', 'none');
+    //$('.content-info__cat-desc .local-media:first-child').css('display', 'none');
   }
 });
