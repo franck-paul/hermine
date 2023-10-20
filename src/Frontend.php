@@ -14,7 +14,7 @@ declare(strict_types=1);
 
 namespace Dotclear\Theme\hermine;
 
-use dcCore;
+use Dotclear\App;
 use Dotclear\Core\Process;
 
 class Frontend extends Process
@@ -30,7 +30,7 @@ class Frontend extends Process
             return false;
         }
 
-        dcCore::app()->tpl->addBlock('IfEntryFirstImage', FrontendTemplate::IfEntryFirstImage(...));
+        App::frontend()->template()->addBlock('IfEntryFirstImage', FrontendTemplate::IfEntryFirstImage(...));
 
         return true;
     }

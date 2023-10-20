@@ -26,7 +26,7 @@ class FrontendTemplate
         $cat_only      = empty($attr['cat_only']) ? 'false' : 'true';
 
         return
-        "<?php if (context::EntryFirstImageHelper('" . addslashes($size) . "'," . $with_category . ",'" . addslashes($class) . "'," .
+        "<?php if (Ctx::EntryFirstImageHelper('" . addslashes($size) . "'," . $with_category . ",'" . addslashes($class) . "'," .
             $no_tag . ',' . $content_only . ',' . $cat_only . ") != '') : ?>" .
             $content .
             '<?php endif; ?>';
