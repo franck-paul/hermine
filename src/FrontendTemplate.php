@@ -14,6 +14,8 @@ declare(strict_types=1);
 
 namespace Dotclear\Theme\hermine;
 
+use Dotclear\Core\Frontend\Ctx;
+
 class FrontendTemplate
 {
     public static function IfEntryFirstImage($attr, $content)
@@ -26,9 +28,9 @@ class FrontendTemplate
         $cat_only      = empty($attr['cat_only']) ? 'false' : 'true';
 
         return
-        "<?php if (Ctx::EntryFirstImageHelper('" . addslashes($size) . "'," . $with_category . ",'" . addslashes($class) . "'," .
-            $no_tag . ',' . $content_only . ',' . $cat_only . ") != '') : ?>" .
-            $content .
-            '<?php endif; ?>';
+        '<?php if (' . Ctx::class . "::EntryFirstImageHelper('" . addslashes($size) . "'," . $with_category . ",'" . addslashes($class) . "'," .
+        $no_tag . ',' . $content_only . ',' . $cat_only . ") != '') : ?>" .
+        $content .
+        '<?php endif; ?>';
     }
 }
