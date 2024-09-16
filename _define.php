@@ -22,6 +22,6 @@ $this->registerModule(
 
         'details'    => 'https://open-time.net/?q=hermine',
         'support'    => 'https://github.com/franck-paul/hermine',
-        'repository' => 'https://raw.githubusercontent.com/franck-paul/hermine/master/dcstore.xml',
+        'repository' => 'https://raw.githubusercontent.com/franck-paul/hermine/main/dcstore.xml',
     ]
 );
