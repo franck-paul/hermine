@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @brief hermine, a plugin for Dotclear 2
  *
@@ -25,10 +26,6 @@ class Install extends Process
 
     public static function process(): bool
     {
-        if (!self::status()) {
-            return false;
-        }
-
-        return true;
+        return self::status();
     }
 }

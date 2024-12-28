@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @brief hermine, a plugin for Dotclear 2
  *
@@ -18,7 +19,7 @@ use Dotclear\Core\Frontend\Ctx;
 
 class FrontendTemplate
 {
-    public static function IfEntryFirstImage($attr, $content)
+    public static function IfEntryFirstImage(array $attr, string $content): string
     {
         $size          = empty($attr['size']) ? '' : $attr['size'];
         $class         = empty($attr['class']) ? '' : $attr['class'];
@@ -28,7 +29,7 @@ class FrontendTemplate
         $cat_only      = empty($attr['cat_only']) ? 'false' : 'true';
 
         return
-        '<?php if (' . Ctx::class . "::EntryFirstImageHelper('" . addslashes($size) . "'," . $with_category . ",'" . addslashes($class) . "'," .
+        '<?php if (' . Ctx::class . "::EntryFirstImageHelper('" . addslashes((string) $size) . "'," . $with_category . ",'" . addslashes((string) $class) . "'," .
         $no_tag . ',' . $content_only . ',' . $cat_only . ") != '') : ?>" .
         $content .
         '<?php endif; ?>';

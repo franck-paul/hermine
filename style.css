@@ -33,35 +33,40 @@ a {
 a:focus {
   outline: thin dotted; }
 
-a:active, a:hover {
+a:active,
+a:hover {
   outline: none; }
 
 a img {
   border: none; }
 
-q, cite {
+q,
+cite {
   font-style: italic; }
 
-q:before, q:after {
-  content: ""; }
+q:before,
+q:after {
+  content: ''; }
 
-sup, sub {
-  font-size: .75em;
+sup,
+sub {
+  font-size: calc(0.5em + 4px);
   line-height: 0;
   position: relative;
   vertical-align: baseline; }
 
 sup {
-  top: -0.5em; }
+  top: calc(-0.83 * (1em - 4px)); }
 
 sub {
-  bottom: -0.25em; }
+  top: calc(0.415 * (1em - 4px)); }
 
 abbr[title] {
   border-bottom: 1px dotted;
   cursor: help; }
 
-b, strong {
+b,
+strong {
   font-weight: bold;
   font-size: 0.9375em; }
 
@@ -80,7 +85,10 @@ mark {
   background: #ff0;
   color: #000; }
 
-code, kbd, pre, samp {
+code,
+kbd,
+pre,
+samp {
   font-family: monospace, serif;
   font-size: 1em; }
 
@@ -92,21 +100,27 @@ fieldset {
   padding: 0;
   border: none; }
 
-input, button, select {
+input,
+button,
+select {
   vertical-align: middle; }
 
-button, input, select, textarea {
+button,
+input,
+select,
+textarea {
   font-family: inherit;
   font-size: 100%;
   margin: 0; }
 
-button, input {
+button,
+input {
   line-height: normal; }
 
 button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+html input[type='button'],
+input[type='reset'],
+input[type='submit'] {
   -webkit-appearance: button;
   cursor: pointer; }
 
@@ -114,16 +128,16 @@ button[disabled],
 html input[disabled] {
   cursor: default; }
 
-input[type="checkbox"],
-input[type="radio"] {
+input[type='checkbox'],
+input[type='radio'] {
   padding: 0;
   border: none; }
 
-input[type="search"] {
+input[type='search'] {
   -webkit-appearance: textfield; }
 
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-decoration {
   -webkit-appearance: none; }
 
 button::-moz-focus-inner,
@@ -139,12 +153,14 @@ table {
   border-collapse: collapse;
   margin-bottom: 1.5em; }
 
-td, th {
+td,
+th {
   padding: 1px;
   vertical-align: top;
   text-align: left; }
 
-td:first-child, th:first-child {
+td:first-child,
+th:first-child {
   empty-cells: hide; }
 
 /* scripts */
@@ -152,11 +168,23 @@ body > script {
   display: none !important; }
 
 /* HTML5 for old browsers */
-article, aside, details, figcaption, figure, footer,
-header, hgroup, main, nav, section, summary {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
   display: block; }
 
-audio, canvas, video {
+audio,
+canvas,
+video {
   display: inline-block; }
 
 audio:not([controls]) {
@@ -166,14 +194,20 @@ audio:not([controls]) {
 figure {
   margin: 0; }
 
-[hidden], template {
+[hidden],
+template {
   display: none; }
 
 svg:not(:root) {
   overflow: hidden; }
 
 /* Headings reset */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-size: 1em;
   font-weight: normal;
   margin: 0; }
