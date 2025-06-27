@@ -17,30 +17,31 @@ body {
     left: 1.875em;
     max-width: 12.5em;
     padding-bottom: 55px;
-    background: #fff url(img/hermine.png) no-repeat left bottom;
+    background: #fff url(index.php?tf=img/hermine.png) no-repeat left bottom;
 }
 .header {
     background: $black;
     position: relative;
     padding: 1em 0 3em;
-    }
+}
 @media all and(max-width: $small-screen) {
     #main {
-        padding: .5em;
+        padding: 0.5em;
     }
 }
 @media screen and(max-width: ($large-screen + 25em)) {
     #footer {
         position: static;
         width: 100%;
-        padding: 1em .5em 55px;
+        padding: 1em 0.5em 55px;
     }
 }
 @media screen and(min-width: 110.1em) {
     body {
         font-size: 1.125em;
     }
-    #blognav, #blogextra {
+    #blognav,
+    #blogextra {
         width: 49%;
         display: inline-block;
         vertical-align: top;

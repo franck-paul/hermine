@@ -16,14 +16,16 @@ $this->registerModule(
     '5.1',
     [
         'date'                 => '2003-08-13T13:42:00+0100',
-        'requires'             => [['core', '2.28']],
+        'requires'             => [['core', '2.35']],
         'type'                 => 'theme',
         'tplset'               => 'dotty',
         'widgettitleformat'    => '<h3 class="widget-title">%s</h3>',
         'widgetsubtitleformat' => '<h4 class="widget-subtitle">%s</h4>',
+        'overload'             => true,
 
         'details'    => 'https://open-time.net/?q=hermine',
         'support'    => 'https://github.com/franck-paul/hermine',
         'repository' => 'https://raw.githubusercontent.com/franck-paul/hermine/main/dcstore.xml',
+        'license'    => 'gpl2',
     ]
 );

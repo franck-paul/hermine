@@ -15,11 +15,12 @@ declare(strict_types=1);
 
 namespace Dotclear\Theme\hermine;
 
+use ArrayObject;
 use Dotclear\Core\Frontend\Ctx;
 
 class FrontendTemplate
 {
-    public static function IfEntryFirstImage(array $attr, string $content): string
+    public static function IfEntryFirstImage(array|ArrayObject $attr, string $content): string
     {
         $size          = empty($attr['size']) ? '' : $attr['size'];
         $class         = empty($attr['class']) ? '' : $attr['class'];
