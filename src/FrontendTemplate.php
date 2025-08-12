@@ -20,7 +20,10 @@ use Dotclear\Core\Frontend\Ctx;
 
 class FrontendTemplate
 {
-    public static function IfEntryFirstImage(array|ArrayObject $attr, string $content): string
+    /**
+     * @param  ArrayObject<array-key, mixed>    $attr
+     */
+    public static function IfEntryFirstImage(ArrayObject $attr, string $content): string
     {
         $size          = empty($attr['size']) ? '' : $attr['size'];
         $class         = empty($attr['class']) ? '' : $attr['class'];
