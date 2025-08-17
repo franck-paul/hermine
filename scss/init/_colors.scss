@@ -1,0 +1,105 @@
+:root {
+  --body-color: light-dark(#373737, #f3f3f3);
+  --body-background-color: light-dark(#fff, #242424);
+
+  --header-color: light-dark(#fff, #fafafa);
+  --header-background-color: light-dark(#000, #121212);
+
+  --skiplinks-color: light-dark(#000, #f3f3f3);
+  --skiplinks-focus-color: light-dark(#235da4, #fafafa);
+  --skiplinks-focus-background-color: light-dark(#f3f3f3, #242424);
+
+  --site-title-text-color: light-dark(#fff, #fafafa);
+  --site-title-link-color: light-dark(#71aad0, #71aad0);
+  --site-baseline-color: light-dark(#636363, #636363);
+
+  --header-link-color: var(--header-color);
+  --header-link-border-color: light-dark(#71aad0, #fafafa);
+  --header-link-focus-color: light-dark(#71aad0, #fafafa);
+
+  --header-nav-color: var(--header-link-color);
+  --header-nav-focus-color: light-dark(#71aad0, #fafafa);
+  --header-nav-background-color: var(--header-background-color);
+  --header-nav-focus-background-color: light-dark(#71aad0, #264165);
+  --header-nav-border-color: var(--header-color);
+
+  --hamburger-background-color: light-dark(#000, #000);
+  --hamburger-background-focus-color: light-dark(#264165, #264165);
+  --hamburger-border-color: light-dark(#000, 000);
+
+  --sidebar-focus-background-color: light-dark(#eee, #363636);
+
+  --navlinks-color: light-dark(#fff, #242424);
+  --navlinks-background-color: light-dark(#f3f3f3, #242424);
+  --navlinks-focus-color: light-dark(#fff, #fff);
+  --navlinks-focus-background-color: light-dark(#235da4, #264165);
+  --navlinks-border-color: light-dark(#dcdcdc, #dcdcdc);
+
+  --gototop-color: light-dark(#636363, #fafafa);
+  --gototop-background-color: light-dark(#fff, #636363);
+  --gototop-border-color: light-dark(#636363, #636363);
+
+  --tooltip-color: light-dark(#fff, #fff);
+  --tooltip-background-color: light-dark(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+
+  --link-color: light-dark(#d52125, #ff5849);
+  --link-border-color: light-dark(#d52125, #4d9bcf);
+  --link-border-bottom-color: light-dark(#dcdcdc, #dcdcdc);
+  --link-focus-color: light-dark(#d52125, #d52125);
+  --link-focus-background-color: light-dark(#fafafa, #fafafa);
+
+  --hr-background-color: light-dark(#333333, #333333);
+  --hr-gradient-end: light-dark(#dcdcdc, #333333);
+  --hr-gradient-middle: light-dark(#1f5788, #4d9bcf);
+
+  --quote-color: light-dark(#5b7785, #4d9bcf);
+
+  --code-color: light-dark(#fff, #fff);
+  --code-background-color: light-dark(#515570, #515570);
+
+  --archive-link-color: light-dark(#373737, #f3f3f3);
+  --archive-link-focus-color: light-dark(#fafafa, #ff5849);
+  --archive-h3-color: light-dark(#235da4, #4d9bcf);
+  --archive-h4-color: light-dark(#373737, #4d9bcf);
+
+  --archive-border-color: light-dark(#373737, #4d9bcf);
+
+  --arch-tag-list-0-color: light-dark(#909090, #909090);
+  --arch-tag-list-10-color: light-dark(#828282, #a4a4a4);
+  --arch-tag-list-20-color: light-dark(#737373, #aeaeae);
+  --arch-tag-list-30-color: light-dark(#656565, #b8b8b8);
+  --arch-tag-list-40-color: light-dark(#484848, #c2c2c2);
+  --arch-tag-list-50-color: light-dark(#3a3a3a, #cdcdcd);
+  --arch-tag-list-60-color: light-dark(#2b2b2b, #d7d7d7);
+  --arch-tag-list-70-color: light-dark(#1d1d1d, #e1e1e1);
+  --arch-tag-list-80-color: light-dark(#0e0e0e, #ebebeb);
+  --arch-tag-list-90-color: light-dark(#030303, #f5f5f5);
+  --arch-tag-list-100-color: light-dark(#000, #fff);
+
+  --button-color: light-dark(#fff, #fff);
+  --button-background-color: light-dark(#5c7785, #5c7785);
+  --button-border-color: light-dark(#fff, #fff);
+
+  --footnotes-marker-color: light-dark(#235da4, #4d9bcf);
+  --footnotes-border-color: light-dark(#235da4, #267daf);
+
+  --post-meta-background-color: light-dark(#f3f3f3, #242424);
+  --post-title-border-color: light-dark(#fff, #fff);
+  --post-title-focus-background-color: light-dark(#235da4, #267daf);
+  --post-day-date-background-color: light-dark(#dcdcdc, #636363);
+  --post-feedback-title-color: light-dark(#636363, #dcdcdc);
+  --post-feedback-background-color: light-dark(#dcdcdc, #dcdcdc);
+  --post-attachments-border-color: light-dark(#dcdcdc, #dcdcdc);
+  --post-attachments-title-color: light-dark(#636363, #636363);
+
+  --comment-background-color: light-dark(#edf3f2, #122f49);
+  --comment-me-background-color: light-dark(#eeedf3, #362843);
+  --ping-background-color: light-dark(#f3efed, #2a1744);
+  --comment-number-color: light-dark(#d52125, #fff);
+  --comment-number-background-color: light-dark(#fff, #267daf);
+
+  --feedback-preview-background-color: light-dark(#f3f3f3, #29587f);
+  --feedback-preview-border-color: light-dark(#6c7c7c, #29587f);
+  --feedback-error-color: light-dark(#fff, #fff);
+  --feedback-error-background-color: light-dark(#d52125, #d52125);
+}

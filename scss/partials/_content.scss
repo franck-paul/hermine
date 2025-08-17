@@ -2,51 +2,73 @@
 
 .pagination {
   margin-top: 2em;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
   text-align: center;
 }
 .navlinks {
-  color: $white;
+  color: var(--navlinks-color);
   margin: 0;
   text-align: center;
 }
-.prev {
-  @include replace-text(inline-image('icon_prev.png'));
-}
+.prev,
 .next {
-  @include replace-text(inline-image('icon_next.png'));
-}
-.prev, .next {
   vertical-align: middle;
   width: 2.5em;
   height: 2.5em;
   display: inline-block;
   border-radius: 50%;
-  border: 1px solid $gray-very-dark;
-  background-color: $black;
-  &:hover, &:focus {
-    border-width: 3px;
+  border: 1px solid var(--navlinks-border-color);
+  background-color: var(--navlinks-background-color);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  &:hover,
+  &:focus {
+    color: var(--navlinks-focus-color);
+    background-color: var(--navlinks-focus-background-color);
   }
 }
-#breadcrumb {}
-#bc-home {}
+.prev {
+  background-image: url("data:image/svg+xml,%3Csvg clip-rule='evenodd' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' viewBox='0 0 32 22' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m179.17 242.758h28.235v27.809h-28.235z' fill='none' transform='matrix(1.13335 0 0 .791101 -203.06204 -192.0456)'/%3E%3Cpath d='m22.808 8.548c-.392-.392-1.03-.392-1.422 0l-5.92 6.69c-.2.2-.296.462-.292.724-.002.262.092.526.292.726l5.918 6.69c.392.392 1.03.392 1.422 0s.392-1.03 0-1.422l-5.3-5.992 5.3-5.992c.394-.394.394-1.032.002-1.424z' fill='%23646e79' fill-rule='nonzero' stroke='%23606c78' stroke-width='1' transform='matrix(1.19207 0 0 1.19207 -7.81362 -8.029009)'/%3E%3C/svg%3E");
+
+  &:focus,
+  &:hover {
+    background-image: url("data:image/svg+xml,%3Csvg clip-rule='evenodd' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' viewBox='0 0 32 22' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m179.17 242.758h28.235v27.809h-28.235z' fill='none' transform='matrix(1.13335 0 0 .791101 -203.06204 -192.0456)'/%3E%3Cpath d='m22.808 8.548c-.392-.392-1.03-.392-1.422 0l-5.92 6.69c-.2.2-.296.462-.292.724-.002.262.092.526.292.726l5.918 6.69c.392.392 1.03.392 1.422 0s.392-1.03 0-1.422l-5.3-5.992 5.3-5.992c.394-.394.394-1.032.002-1.424z' fill='%23ffffff' fill-rule='nonzero' stroke='%23ffffff' stroke-width='1' transform='matrix(1.19207 0 0 1.19207 -7.81362 -8.029009)'/%3E%3C/svg%3E");
+  }
+}
+.next {
+  background-image: url("data:image/svg+xml,%3Csvg clip-rule='evenodd' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' viewBox='0 0 32 22' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m179.17 242.758h28.235v27.809h-28.235z' fill='none' transform='matrix(1.13335 0 0 .791101 -203.06204 -192.0456)'/%3E%3Cpath d='m22.808 8.548c-.392-.392-1.03-.392-1.422 0l-5.92 6.69c-.2.2-.296.462-.292.724-.002.262.092.526.292.726l5.918 6.69c.392.392 1.03.392 1.422 0s.392-1.03 0-1.422l-5.3-5.992 5.3-5.992c.394-.394.394-1.032.002-1.424z' fill='%23646e79' fill-rule='nonzero' stroke='%23606c78' stroke-width='1' transform='matrix(-1.19207 0 0 1.19207 39.81366 -8.029009)'/%3E%3C/svg%3E");
+
+  &:focus,
+  &:hover {
+    background-image: url("data:image/svg+xml,%3Csvg clip-rule='evenodd' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' viewBox='0 0 32 22' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m179.17 242.758h28.235v27.809h-28.235z' fill='none' transform='matrix(1.13335 0 0 .791101 -203.06204 -192.0456)'/%3E%3Cpath d='m22.808 8.548c-.392-.392-1.03-.392-1.422 0l-5.92 6.69c-.2.2-.296.462-.292.724-.002.262.092.526.292.726l5.918 6.69c.392.392 1.03.392 1.422 0s.392-1.03 0-1.422l-5.3-5.992 5.3-5.992c.394-.394.394-1.032.002-1.424z' fill='%23ffffff' fill-rule='nonzero' stroke='%23ffffff' stroke-width='1' transform='matrix(-1.19207 0 0 1.19207 39.81366 -8.029009)'/%3E%3C/svg%3E");
+  }
+}
+
 /* *** media before title / home page *** */
 
-.media-original, .media-title, .media-cat-title {
+.media-original,
+.media-title,
+.media-cat-title {
   margin: 0 auto;
 }
 img {
-  &.media-original, &.media-title, &.media-cat-title {
+  &.media-original,
+  &.media-title,
+  &.media-cat-title {
     max-height: inherit;
   }
 }
 /* *** content info *** */
 
-#content-info, #content-title {
+#content-info,
+#content-title {
   margin-top: 2em;
   margin-bottom: 4em;
   padding: 0;
-  font-size: scut-em(14);
+  font-size: 0.875em;
   h2 {
     margin-top: 1em;
     margin-bottom: 1em;
@@ -61,7 +83,7 @@ img {
     font-size: 1em;
   }
   ul {
-    margin-top: scut-em(8, 14);
+    margin-top: 0.5em;
     padding-left: 0;
   }
 }
@@ -80,52 +102,61 @@ img {
     font-weight: bold;
   }
 }
+
 // lien de retour, à combiner avec le script js
 #gotop {
   display: none;
   z-index: 1000;
   position: fixed;
   bottom: 0;
-  right: .5em;
+  right: 0.5em;
   width: 10em;
-  padding: .25em;
-  border: 1px solid $gray-dark;
-  border-radius: .25em;
-  background-color: $white;
-  color: #333;
-  font-size: .875em;
+  padding: 0.25em;
+  border-radius: 0.25em;
+  color: var(--gototop-color);
+  background-color: var(--gototop-background-color);
+  border: 1px solid var(--gototop-border-color);
+  font-size: 0.875em;
   text-align: center;
-  a, a:link, a:hover, a:active {
+
+  a {
+    color: var(--gototop-color);
     background: transparent;
     border: none;
     font-weight: bold;
-    color: $gray-dark;
+
+    &:active,
+    &:hover,
+    &:focus {
+      color: revert-layer;
+    }
   }
 }
+
 // tooltip
 a.tooltip {
   display: block;
   position: relative;
   border-bottom: 0;
 }
-a.tooltip:hover, a.tooltip:active {
+a.tooltip:hover,
+a.tooltip:active {
   border-color: transparent;
 }
 a.tooltip:after {
-  background: #ccc;
-  background: rgba(0, 0, 0, .5);
+  color: var(--tooltip-color);
+  background: var(--tooltip-background-color);
   border-radius: 5px;
   bottom: 15%;
   left: 25%;
   width: 50%;
-  color: #fff;
   content: attr(title);
   text-align: center;
   padding: 10px 15px;
   position: absolute;
   z-index: 98;
   opacity: 0;
-  transition: opacity .4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
 }
 a.tooltip:hover:after {
   opacity: 1;

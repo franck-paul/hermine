@@ -2,53 +2,52 @@ button,
 input,
 select,
 textarea {
-    font-family: inherit;
-    font-size: 100%;
-    margin: 0;
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
 }
 button,
 input {
-    line-height: normal;
+  line-height: normal;
 }
 button,
 select {
-    text-transform: none;
+  text-transform: none;
 }
 button,
 html input[type='button'],
 input[type='reset'],
 input[type='submit'] {
-    -webkit-appearance: button;
-    cursor: pointer;
+  -webkit-appearance: button;
+  appearance: button;
+  cursor: pointer;
 }
 input[type='radio'],
 input[type='checkbox'] {
-    cursor: pointer;
+  cursor: pointer;
 }
 button:disabled,
 input:disabled {
-    cursor: default;
+  cursor: default;
 }
 input[type='checkbox'],
 input[type='radio'] {
-    padding: 0;
+  padding: 0;
 }
 input[type='search'] {
-    -webkit-appearance: textfield;
+  -webkit-appearance: textfield;
+  appearance: textfield;
 }
 input[type='search']::-webkit-search-cancel-button,
 input[type='search']::-webkit-search-decoration {
-    -webkit-appearance: none;
+  -webkit-appearance: none;
 }
 textarea {
-    overflow: auto;
-    vertical-align: top;
+  overflow: auto;
+  vertical-align: top;
 }
 button,
 input:not([type='radio']):not([type='checkbox']),
 select {
-    vertical-align: middle;
-}
-::-moz-placeholder {
-    opacity: 1;
+  vertical-align: middle;
 }

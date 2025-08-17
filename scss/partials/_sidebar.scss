@@ -1,73 +1,75 @@
 .sidebar {
-    @include pie-clearfix;
-    padding-top: 2em;
-    padding-bottom: 1.2em;
+  padding-top: 2em;
+  padding-bottom: 1.2em;
 }
 .blognav__title,
 .blogextra__title {
-    @include visually-hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }
 
 .blognav__widgets h3,
 .blognav__widgets h4,
 .blogextra__widgets h3,
 .blogextra__widgets h4 {
-    font-size: 1em;
-    font-weight: bold;
+  font-size: 1em;
+  font-weight: bold;
 }
 .blognav__widgets h3,
 .blogextra__widgets h3 {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 .blognav__widgets h4,
 .blogextra__widgets h4 {
-    margin-top: 1.5em;
-    margin-bottom: 0;
+  margin-top: 1.5em;
+  margin-bottom: 0;
 }
-.blognav__widgets .widget, .blogextra__widgets .widget {
-    padding: 1em;
-    font-size: .875em;
-    line-height: 1.71429;
-    > ul {
-        @include no-bullets;
-        padding-left: 0;
-    }
-    > nav ul {
-        @include no-bullets;
-        padding-left: 0;
-    }
+.blognav__widgets .widget,
+.blogextra__widgets .widget {
+  padding: 1em;
+  font-size: 0.875em;
+  line-height: 1.71429;
+  > ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  > nav ul {
+    list-style: none;
+    padding-left: 0;
+  }
 }
-.blognav__widgets, .blogextra__widgets {
-    ul {
-        margin: 0;
-    }
-    li {
-        display: block;
-        padding: .25em;
-    }
-    li ul {
-    margin-left: -.25em;
-    }
-    li li {
-    }
-    li li:last-child {
-    }
+.blognav__widgets,
+.blogextra__widgets {
+  ul {
+    margin: 0;
+  }
+  li {
+    display: block;
+    padding: 0.25em;
+  }
+  li ul {
+    margin-left: -0.25em;
+  }
 }
 #q {
-    width: 75%;
+  width: 75%;
 }
 .category-current {
-    margin-left: -2em;
-}
-.category-current ul {
-    background-color: $gray-very-light;
+  font-weight: bold;
 }
 .sidebar li:hover ul {
-    background-color: $gray-very-light;
+  background-color: var(--sidebar-focus-background-color);
 }
-@media screen and(min-width: ($small-screen + .1em)) {
-    .blognav__widgets .widget, .blogextra__widgets .widget {
-        width: 50%;
-        float: left;
-    }
+@media screen and (width > 30em) {
+  .blognav__widgets .widget,
+  .blogextra__widgets .widget {
+    width: 50%;
+    float: left;
+  }
 }

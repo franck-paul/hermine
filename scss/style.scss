@@ -3,34 +3,28 @@
 /** --------------------------------------------------
     Start
 --------------------------------------------------- */
-@import "init/mixins-functions";    // mixins, fonctions
-@import "init/rebase";              // init html tags
-@import "init/config";              // theme variables
-@import "init/font";				// local fonts
+@use 'init/rebase'; // init html tags
+@use 'init/colors'; // colors
+@use 'init/font'; // local fonts
 
 /** --------------------------------------------------
     Common rules
 --------------------------------------------------- */
-@import "partials/common";          // headings, links
-@import "partials/icons";           // icons
+@use 'partials/common'; // headings, links
+@use 'partials/icons'; // icons
 
 /** --------------------------------------------------
     layout elements
 --------------------------------------------------- */
-@import "partials/global_layout";   // containers
-@import "partials/header";
-@import "partials/footer";
-@import "partials/sidebar";
-@import "partials/content";
-@import "partials/post";
-@import "partials/archive";
+@use 'partials/global_layout'; // containers
+@use 'partials/header';
+@use 'partials/footer';
+@use 'partials/sidebar';
+@use 'partials/content';
+@use 'partials/post';
+@use 'partials/archive';
 
 /** --------------------------------------------------
-	plugin specifics
+    plugin specifics
 --------------------------------------------------- */
-@import "partials/plugins";
-
-/*** dev only ***/
-#main {
-    //@include debug-vertical-alignment;
-}
+@use 'partials/plugins';

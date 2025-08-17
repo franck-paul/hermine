@@ -1,11 +1,17 @@
-/**
-    PLUGINS
-------------------------------- */
-
-// socialShare
+/* Plugin socialShare */
 .share {
-    max-width: 48em;
-    margin-left: auto;
-    margin-right: auto;
-	text-align: left !important;
+  max-width: 48em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left !important;
+}
+
+/* Plugin Markdown */
+div.footnotes[role='doc-endnotes'] ol:before {
+  content: 'Notes :';
+  margin-left: -1em;
+}
+div.footnotes[role='doc-endnotes'] ol li::marker {
+  color: var(--footnotes-marker-color);
+  font-size: smaller;
 }
