@@ -266,7 +266,7 @@ h6 {
   --body-background-color: light-dark(#fff, #242424);
   --header-color: light-dark(#fff, #fafafa);
   --header-background-color: light-dark(#000, #121212);
-  --skiplinks-color: light-dark(#000, #f3f3f3);
+  --skiplinks-color: light-dark(#000, #121212);
   --skiplinks-focus-color: light-dark(#235da4, #fafafa);
   --skiplinks-focus-background-color: light-dark(#f3f3f3, #242424);
   --site-title-text-color: light-dark(#fff, #fafafa);
