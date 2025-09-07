@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @brief hermine, a plugin for Dotclear 2
  *
@@ -15,10 +16,12 @@ declare(strict_types=1);
 namespace Dotclear\Theme\hermine;
 
 use Dotclear\App;
-use Dotclear\Core\Process;
+use Dotclear\Helper\Process\TraitProcess;
 
-class Frontend extends Process
+class Frontend
 {
+    use TraitProcess;
+
     public static function init(): bool
     {
         return self::status(My::checkContext(My::FRONTEND));

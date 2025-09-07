@@ -16,7 +16,7 @@ $this->registerModule(
     '7.0.1',
     [
         'date'                 => '2025-08-18T10:00:17+0200',
-        'requires'             => [['core', '2.35']],
+        'requires'             => [['core', '2.36']],
         'type'                 => 'theme',
         'tplset'               => 'dotty',
         'widgettitleformat'    => '<h3 class="widget-title">%s</h3>',
