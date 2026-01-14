@@ -45,7 +45,10 @@ $(() => {
   });
 
   // scroll comment preview if present
-  document.getElementById('pr')?.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'nearest' }); // totop scroll
+  const isMotionReduced = window.matchMedia(`(prefers-reduced-motion: reduce)`)?.matches === true;
+  document
+    .getElementById('pr')
+    ?.scrollIntoView({ behavior: isMotionReduced ? 'instant' : 'smooth', block: 'center', inline: 'nearest' });
 
   // Add specific .wide-display class to paragraph with media inside, figure and video
   $(
