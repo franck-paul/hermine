@@ -13,9 +13,9 @@ $this->registerModule(
     'Hermine',
     'Hermine photoblog theme (based on Berlin)',
     'Franck Paul',
-    '8.0',
+    '8.1',
     [
-        'date'                 => '2025-09-07T14:19:56+0200',
+        'date'                 => '2026-01-14T13:14:18+0100',
         'requires'             => [['core', '2.36']],
         'type'                 => 'theme',
         'tplset'               => 'dotty',
