@@ -6,7 +6,7 @@
  * @package Dotclear
  * @subpackage Themes
  *
- * @copyright Franck Paul (carnet.franck.paul@gmail.com)
+ * @copyright Franck Paul (contact@open-time.net)
  * @copyright GPL-2.0
  */
 $this->registerModule(
