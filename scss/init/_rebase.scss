@@ -54,14 +54,14 @@ sub {
 }
 
 sup {
-  top: calc(-0.83 * (1em - 4px));
+  inset-block-start: calc(-0.83 * (1em - 4px));
 }
 
 sub {
-  top: calc(0.415 * (1em - 4px));
+  inset-block-start: calc(0.415 * (1em - 4px));
 }
 abbr[title] {
-  border-bottom: 1px dotted;
+  border-block-end: 1px dotted;
   cursor: help;
 }
 b,
@@ -78,7 +78,7 @@ dfn {
 hr {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
-  height: 0;
+  block-size: 0;
 }
 mark {
   background: #ff0;
@@ -147,13 +147,13 @@ textarea {
 }
 table {
   border-collapse: collapse;
-  margin-bottom: 1.5em;
+  margin-block-end: 1.5em;
 }
 td,
 th {
   padding: 1px;
   vertical-align: top;
-  text-align: left;
+  text-align: start;
 }
 td:first-child,
 th:first-child {
@@ -186,7 +186,7 @@ video {
 }
 audio:not([controls]) {
   display: none;
-  height: 0;
+  block-size: 0;
 }
 figure {
   margin: 0;
@@ -213,10 +213,10 @@ h6 {
 .visually-hidden {
   border: 0;
   clip: rect(0 0 0 0);
-  height: 1px;
+  block-size: 1px;
   margin: -1px;
   overflow: hidden;
   padding: 0;
   position: absolute;
-  width: 1px;
+  inline-size: 1px;
 }

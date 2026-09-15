@@ -2,13 +2,16 @@
 /* general */
 .dc-archive .content-inner {
   @media all and (width > 30em) {
-    margin-left: 3em;
-    margin-right: 3em;
+    margin-inline-start: 3em;
+    margin-inline-end: 3em;
   }
 }
 .arch-block {
   display: inline-block;
-  margin: 0 0 2em 0;
+  margin-block-start: 0;
+  margin-block-end: 2em;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
   vertical-align: top;
   a {
     color: var(--archive-link-color);
@@ -17,27 +20,30 @@
     }
   }
   @media all and (width > 30em) {
-    margin-left: 4em;
+    margin-inline-start: 4em;
   }
 }
 .arch-block:first-child {
-  margin-left: 0;
+  margin-inline-start: 0;
 }
 #other-criteria {
-  width: 100%;
+  inline-size: 100%;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
 }
 #other-criteria .arch-block {
-  margin: 0 2em 0 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 2em;
   &:last-child {
-    margin-right: 0;
+    margin-inline-end: 0;
   }
 }
 .arch-block h3 {
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
   font-size: 1.2em;
   font-style: italic;
   font-weight: normal;
@@ -47,8 +53,8 @@
 .arch-block h4 {
   font-weight: bold;
   font-size: 1.1em;
-  margin-bottom: 0;
-  margin-top: 0;
+  margin-block-end: 0;
+  margin-block-start: 0;
   color: var(--archive-h4-color);
 }
 .arch-list,
@@ -58,30 +64,30 @@
   padding: 0;
 }
 .arch-sub-list {
-  margin-left: 20px;
+  margin-inline-start: 20px;
 }
 /* par date */
 .arch-by-year {
-  margin-right: 0;
-  margin-bottom: 1em;
+  margin-inline-end: 0;
+  margin-block-end: 1em;
 }
 .arch-by-year h3 {
-  margin-bottom: 0;
+  margin-block-end: 0;
 }
 .arch-by-year h3:first-child {
-  margin-top: 0;
+  margin-block-start: 0;
 }
 .fromto {
-  margin-top: 0;
-  margin-bottom: 1.5em;
+  margin-block-start: 0;
+  margin-block-end: 1.5em;
   font-size: 0.875em;
   font-style: italic;
 }
 .arch-by-year__each-year h4 {
-  float: left;
+  float: inline-start;
 }
 .arch-year-list {
-  margin-bottom: 1.5em;
+  margin-block-end: 1.5em;
 }
 .arch-year-list span {
   font-size: 0.875em;
@@ -89,14 +95,19 @@
 /* thumbnails */
 .arch-thumbnail-list {
   /* if thumbnail is ul, delete margin and padding */
-  margin: 0 0 0 4em;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 4em;
+  margin-inline-end: 0;
   padding: 0;
 }
 .arch-thumb {
   /* li or div */
   display: inline-block;
   vertical-align: top;
-  margin: 0 0 4px;
+  margin-block-start: 0;
+  margin-block-end: 4px;
+  margin-inline: 0;
   padding: 0;
   background: var(--body-background);
 }
@@ -105,26 +116,26 @@
 }
 .arch-thumb a {
   display: block;
-  width: 6em;
-  height: 6em;
+  inline-size: 6em;
+  block-size: 6em;
   overflow: hidden;
   position: relative;
   &:link,
   &:visited {
-    border-bottom: none;
+    border-block-end: none;
   }
 }
 .arch-thumb a:link img {
   position: absolute;
-  bottom: 0;
-  left: 0;
+  inset-block-end: 0;
+  inset-inline-start: 0;
   padding: 0;
-  width: 100%;
-  height: auto;
+  inline-size: 100%;
+  block-size: auto;
   transition: 0.6s;
 }
 .arch-thumb a:hover img {
-  left: 3em;
+  inset-inline-start: 3em;
   transform: rotate(30deg);
 }
 .arch-thumb a:hover span {
@@ -134,8 +145,8 @@
 .arch-month {
   font-size: 1.66em;
   position: absolute;
-  top: 2px;
-  left: 4px;
+  inset-block-start: 2px;
+  inset-inline-start: 4px;
   opacity: 0.7;
 }
 
@@ -145,15 +156,15 @@
   --radius: 0.5em;
 
   ul {
-    margin-left: calc(var(--radius) - var(--spacing));
-    padding-left: 0;
+    margin-inline-start: calc(var(--radius) - var(--spacing));
+    padding-inline-start: 0;
   }
 
   li {
     display: block;
     position: relative;
-    padding-left: calc(2 * var(--spacing) - var(--radius) - 1px);
-    border-left: 1px solid var(--archive-border-color);
+    padding-inline-start: calc(2 * var(--spacing) - var(--radius) - 1px);
+    border-inline-start: 1px solid var(--archive-border-color);
     &:last-child {
       border-color: transparent;
     }
@@ -161,10 +172,10 @@
       content: '';
       display: block;
       position: absolute;
-      top: calc(var(--spacing) / -2);
-      left: -1px;
-      width: calc(var(--spacing) + 1px);
-      height: var(--spacing);
+      inset-block-start: calc(var(--spacing) / -2);
+      inset-inline-start: -1px;
+      inline-size: calc(var(--spacing) + 1px);
+      block-size: var(--spacing);
       border: solid var(--archive-border-color);
       border-width: 0 0 1px 1px;
     }
@@ -173,14 +184,14 @@
 
 /* par tag */
 .arch-by-tag {
-  max-width: 20em;
+  max-inline-size: 20em;
   @media all and (width > 60em) {
-    max-width: 32em;
+    max-inline-size: 32em;
   }
 }
 .arch-tag-list li {
   display: inline;
-  padding-right: 1em;
+  padding-inline-end: 1em;
 }
 .arch-tag-list .tag0 {
   color: var(--arch-tag-list-0-color);

@@ -1,15 +1,15 @@
 /* Plugin socialShare */
 .share {
-  max-width: 48em;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: left !important;
+  max-inline-size: 48em;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  text-align: start !important;
 }
 
 /* Plugin Markdown */
 div.footnotes[role='doc-endnotes'] ol:before {
   content: 'Notes :';
-  margin-left: -1em;
+  margin-inline-start: -1em;
 }
 div.footnotes[role='doc-endnotes'] ol li::marker {
   color: var(--footnotes-marker-color);

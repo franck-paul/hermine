@@ -1,8 +1,8 @@
 /* *** navigation *** */
 
 .pagination {
-  margin-top: 2em;
-  margin-bottom: 0.5em;
+  margin-block-start: 2em;
+  margin-block-end: 0.5em;
   text-align: center;
 }
 .navlinks {
@@ -13,8 +13,8 @@
 .prev,
 .next {
   vertical-align: middle;
-  width: 2.5em;
-  height: 2.5em;
+  inline-size: 2.5em;
+  block-size: 2.5em;
   display: inline-block;
   border-radius: 50%;
   border: 1px solid var(--navlinks-border-color);
@@ -23,7 +23,7 @@
   background-position: 50% 50%;
   text-indent: -119988px;
   overflow: hidden;
-  text-align: left;
+  text-align: start;
   &:hover,
   &:focus {
     color: var(--navlinks-focus-color);
@@ -58,20 +58,20 @@ img {
   &.media-original,
   &.media-title,
   &.media-cat-title {
-    max-height: inherit;
+    max-block-size: inherit;
   }
 }
 /* *** content info *** */
 
 #content-info,
 #content-title {
-  margin-top: 2em;
-  margin-bottom: 4em;
+  margin-block-start: 2em;
+  margin-block-end: 4em;
   padding: 0;
   font-size: 0.875em;
   h2 {
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
     font-size: 50px;
     font-weight: 900;
     letter-spacing: -4px;
@@ -83,8 +83,8 @@ img {
     font-size: 1em;
   }
   ul {
-    margin-top: 0.5em;
-    padding-left: 0;
+    margin-block-start: 0.5em;
+    padding-inline-start: 0;
   }
 }
 .content-info__feed {
@@ -93,11 +93,11 @@ img {
   list-style-type: none;
   li {
     display: inline;
-    margin-right: 1.5em;
+    margin-inline-end: 1.5em;
   }
 }
 .content-info__sub-cat {
-  margin-top: 2em;
+  margin-block-start: 2em;
   h3 {
     font-weight: bold;
   }
@@ -108,9 +108,9 @@ img {
   display: none;
   z-index: 1000;
   position: fixed;
-  bottom: 0;
-  right: 0.5em;
-  width: 10em;
+  inset-block-end: 0;
+  inset-inline-end: 0.5em;
+  inline-size: 10em;
   padding: 0.25em;
   border-radius: 0.25em;
   color: var(--gototop-color);
@@ -137,7 +137,7 @@ img {
 a.tooltip {
   display: block;
   position: relative;
-  border-bottom: 0;
+  border-block-end: 0;
 }
 a.tooltip:hover,
 a.tooltip:active {
@@ -147,9 +147,9 @@ a.tooltip:after {
   color: var(--tooltip-color);
   background: var(--tooltip-background-color);
   border-radius: 5px;
-  bottom: 15%;
-  left: 25%;
-  width: 50%;
+  inset-block-end: 15%;
+  inset-inline-start: 25%;
+  inline-size: 50%;
   content: attr(title);
   text-align: center;
   padding: 10px 15px;

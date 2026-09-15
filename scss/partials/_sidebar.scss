@@ -1,17 +1,17 @@
 .sidebar {
-  padding-top: 2em;
-  padding-bottom: 1.2em;
+  padding-block-start: 2em;
+  padding-block-end: 1.2em;
 }
 .blognav__title,
 .blogextra__title {
   border: 0;
   clip: rect(0 0 0 0);
-  height: 1px;
+  block-size: 1px;
   margin: -1px;
   overflow: hidden;
   padding: 0;
   position: absolute;
-  width: 1px;
+  inline-size: 1px;
 }
 
 .blognav__widgets h3,
@@ -27,8 +27,8 @@
 }
 .blognav__widgets h4,
 .blogextra__widgets h4 {
-  margin-top: 1.5em;
-  margin-bottom: 0;
+  margin-block-start: 1.5em;
+  margin-block-end: 0;
 }
 .blognav__widgets .widget,
 .blogextra__widgets .widget {
@@ -37,11 +37,11 @@
   line-height: 1.71429;
   > ul {
     list-style: none;
-    padding-left: 0;
+    padding-inline-start: 0;
   }
   > nav ul {
     list-style: none;
-    padding-left: 0;
+    padding-inline-start: 0;
   }
 }
 .blognav__widgets,
@@ -54,11 +54,11 @@
     padding: 0.25em;
   }
   li ul {
-    margin-left: -0.25em;
+    margin-inline-start: -0.25em;
   }
 }
 #q {
-  width: 75%;
+  inline-size: 75%;
 }
 .category-current {
   font-weight: bold;
@@ -69,7 +69,7 @@
 @media screen and (width > 30em) {
   .blognav__widgets .widget,
   .blogextra__widgets .widget {
-    width: 50%;
-    float: left;
+    inline-size: 50%;
+    float: inline-start;
   }
 }

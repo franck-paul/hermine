@@ -11,18 +11,18 @@
 .blogcustom__title {
   border: 0;
   clip: rect(0 0 0 0);
-  height: 1px;
+  block-size: 1px;
   margin: -1px;
   overflow: hidden;
   padding: 0;
   position: absolute;
-  width: 1px;
+  inline-size: 1px;
 }
 .footer__widgets .widget {
-  margin-top: 1em;
+  margin-block-start: 1em;
 }
 .footer__widgets h3 {
-  margin-bottom: 0;
+  margin-block-end: 0;
   font-size: 1em;
   font-weight: bold;
 }
@@ -34,32 +34,35 @@
   li {
     list-style-image: none;
     list-style-type: none;
-    margin-left: 0;
+    margin-inline-start: 0;
     display: inline-block;
     vertical-align: middle;
     white-space: nowrap;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
+    padding-inline-start: 0.5em;
+    padding-inline-end: 0.5em;
   }
 }
 #blogcustom {
-  text-align: left;
+  text-align: start;
   line-height: 1.5;
   font-size: 1em;
   font-weight: bold;
   text-decoration: none;
   letter-spacing: -0.045em;
   text-transform: uppercase;
-  padding: 0 1em 1em 0;
+  padding-block-start: 0;
+  padding-block-end: 1em;
+  padding-inline-start: 0;
+  padding-inline-end: 1em;
   ul {
     list-style-type: none;
-    padding-left: 0;
-    margin-top: 0;
-    margin-bottom: 0;
+    padding-inline-start: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
     li {
       display: block;
-      padding-left: 0;
-      padding-right: 0;
+      padding-inline-start: 0;
+      padding-inline-end: 0;
       a {
         color: var(--body-color);
       }
